@@ -1,0 +1,34 @@
+name = UCSCv2
+description = The new standard theme for UC Santa Cruz web sites.
+version = 1.0
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/960_12_fluid.css
+stylesheets[all][] = css/ucscv2.css
+
+scripts[] = base64.js
+
+features[] = name
+features[] = logo
+
+regions[header] = Header
+regions[main_menu] = Main Menu
+regions[above_content] = Above Content
+regions[three_column_one] = Three Column One
+regions[three_column_two] = Three Column Two
+regions[three_column_three] = Three Column Three
+regions[four_column_one] = Division Column One
+regions[four_column_two] = Division Column Two
+regions[four_column_three] = Division Column Three
+regions[four_column_four] = Division Column Four
+regions[dept_column_one] = Department Column One
+regions[dept_column_two] = Department Column Two
+regions[dept_column_three] = Department Column Three
+regions[content] = Content
+regions[below_content] = Below Content
+regions[search] = Search
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[footer] = Footer
+regions[help] = Help
