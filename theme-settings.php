@@ -1,20 +1,20 @@
 <?php
 
-function ucscv2_form_system_theme_settings_alter(&$form, &$form_state) {
+function ucsc_form_system_theme_settings_alter(&$form, &$form_state) {
   ################################################################################
-  # basic UCSCv2 settings                                                        #
+  # basic ucsc settings                                                        #
   ################################################################################
 
-  $form["ucscv2"] = array(
+  $form["ucsc"] = array(
     "#type" => "fieldset",
-    "#title" => "UCSCv2 Settings",
-    "#description" => "<p>These settings control the appearance and functionality of the UCSCv2 theme.</p>",
+    "#title" => "ucsc Settings",
+    "#description" => "<p>These settings control the appearance and functionality of the ucsc theme.</p>",
   );
 
-    $form["ucscv2"]["ucscv2_frontpage_template"] = array(
+    $form["ucsc"]["ucsc_frontpage_template"] = array(
     "#type" => "radios",
     "#title" => t("Choose a template to use for your home page."),
-    "#default_value" => (theme_get_setting("ucscv2_frontpage_template") == "" ? "default" : theme_get_setting("ucscv2_frontpage_template")),
+    "#default_value" => (theme_get_setting("ucsc_frontpage_template") == "" ? "default" : theme_get_setting("ucsc_frontpage_template")),
     "#options" => array(
       "default" => "Division",
       "department" => "Department",
@@ -24,22 +24,22 @@ function ucscv2_form_system_theme_settings_alter(&$form, &$form_state) {
       "#required" => true,
   );
 
-  $form["ucscv2"]["ucscv2_google_cse"] = array(
+  $form["ucsc"]["ucsc_google_cse"] = array(
     "#type" => "textfield",
     "#title" => t("Google Custom Search Engine ID"),
-    "#default_value" => theme_get_setting("ucscv2_google_cse"),
+    "#default_value" => theme_get_setting("ucsc_google_cse"),
   );
 
-  $form["ucscv2"]["ucscv2_google_url"] = array(
+  $form["ucsc"]["ucsc_google_url"] = array(
     "#type" => "textfield",
     "#title" => t("Google Custom Search Engine URL"),
-    "#default_value" => theme_get_setting("ucscv2_google_url"),
+    "#default_value" => theme_get_setting("ucsc_google_url"),
   );
 
-  $form["ucscv2"]["ucscv2_css_url"] = array(
+  $form["ucsc"]["ucsc_css_url"] = array(
     "#type" => "textfield",
     "#title" => t("Supplementary CSS URL"),
-    "#default_value" => theme_get_setting("ucscv2_css_url"),
+    "#default_value" => theme_get_setting("ucsc_css_url"),
   );
 
   ################################################################################
@@ -47,10 +47,10 @@ function ucscv2_form_system_theme_settings_alter(&$form, &$form_state) {
   # site are full-width and which are fixed-width                                #
   ################################################################################
 
-  $form["ucscv2"]["ucscv2_fixed_width_default"] = array(
+  $form["ucsc"]["ucsc_fixed_width_default"] = array(
     "#type" => "radios",
     "#title" => t("Show fixed width on specific pages"),
-    "#default_value" => (theme_get_setting("ucscv2_fixed_width_default") == "" ? "all" : theme_get_setting("ucscv2_fixed_width_default")),
+    "#default_value" => (theme_get_setting("ucsc_fixed_width_default") == "" ? "all" : theme_get_setting("ucsc_fixed_width_default")),
     "#options" => array(
       "all" => "All pages except those listed",
       "listed" => "Only the listed pages",
@@ -58,24 +58,24 @@ function ucscv2_form_system_theme_settings_alter(&$form, &$form_state) {
     "#required" => true,
   );
 
-  $form["ucscv2"]["ucscv2_fixed_width_exceptions"] = array(
+  $form["ucsc"]["ucsc_fixed_width_exceptions"] = array(
     "#type" => "textarea",
     "#title" => t("Site Width Exceptions"),
-    "#default_value" => theme_get_setting("ucscv2_fixed_width_exceptions"),
+    "#default_value" => theme_get_setting("ucsc_fixed_width_exceptions"),
     "#description" => "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are blog for the blog page and blog/* for every personal blog. <front> is the front page.",
   );
 
   ################################################################################
   # these fields control how the default drupal logo fields are mixed with the   #
-  # ucscv2 logo link field                                                       #
+  # ucsc logo link field                                                       #
   ################################################################################
 
   $form["logo"]["settings"]["logo_path"]["#weight"] = 9;
 
-  $form["logo"]["settings"]["ucscv2_logo_link"] = array(
+  $form["logo"]["settings"]["ucsc_logo_link"] = array(
     "#type" => "textfield",
     "#title" => t("Optional URL for custom logo"),
-    "#default_value" => theme_get_setting("ucscv2_logo_link"),
+    "#default_value" => theme_get_setting("ucsc_logo_link"),
     "#weight" => 10,
   );
 

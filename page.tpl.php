@@ -4,11 +4,11 @@
 # if we have a custom CSS, add it to the mix                                   #
 ################################################################################
 
-$ucscv2_css_url = theme_get_setting("ucscv2_css_url");
+$ucsc_css_url = theme_get_setting("ucsc_css_url");
 
-if ($ucscv2_css_url != "") {
+if ($ucsc_css_url != "") {
   drupal_add_css(
-    $ucscv2_css_url,
+    $ucsc_css_url,
     array(
       "type" => "external",
     )
@@ -20,29 +20,29 @@ if ($ucscv2_css_url != "") {
 # on the theme settings and the current path                                   #
 ################################################################################
 
-$ucscv2_fixed_width_default = (theme_get_setting("ucscv2_fixed_width_default") == "" ? "all" : theme_get_setting("ucscv2_fixed_width_default"));
+$ucsc_fixed_width_default = (theme_get_setting("ucsc_fixed_width_default") == "" ? "all" : theme_get_setting("ucsc_fixed_width_default"));
 
-$ucscv2_fixed_width_exceptions = theme_get_setting("ucscv2_fixed_width_exceptions");
+$ucsc_fixed_width_exceptions = theme_get_setting("ucsc_fixed_width_exceptions");
 
 $path = drupal_strtolower(drupal_get_path_alias($_GET['q']));
 
-$page_match = drupal_match_path($path, $ucscv2_fixed_width_exceptions);
+$page_match = drupal_match_path($path, $ucsc_fixed_width_exceptions);
 
 if ($page_match) {
-  if ($ucscv2_fixed_width_default == "all") {
-    $ucscv2_fixed_width = false;
+  if ($ucsc_fixed_width_default == "all") {
+    $ucsc_fixed_width = false;
   } else {
-    $ucscv2_fixed_width = true;
+    $ucsc_fixed_width = true;
   }
 } else {
-  if ($ucscv2_fixed_width_default == "all") {
-    $ucscv2_fixed_width = true;
+  if ($ucsc_fixed_width_default == "all") {
+    $ucsc_fixed_width = true;
   } else {
-    $ucscv2_fixed_width = false;
+    $ucsc_fixed_width = false;
   }
 }
 
-if ($ucscv2_fixed_width) {
+if ($ucsc_fixed_width) {
   echo "<div id=\"outer\" class=\"fixed-width\">\n";
 } else {
   echo "<div id=\"outer\" class=\"full-width\">\n";
@@ -101,7 +101,7 @@ if ($ucscv2_fixed_width) {
 	          $title_class = "title-standard";
 	        }
 
-          $ucscv2_site_name = preg_replace(
+          $ucsc_site_name = preg_replace(
             "/  /",
             "<br>",
             $site_name
@@ -110,7 +110,7 @@ if ($ucscv2_fixed_width) {
           ?>
 
 	    	  <h1 id="site-title" class="<?php print $title_class; ?>">
-	    	    	<?php echo l($ucscv2_site_name, "<front>", array('attributes' => array('title' => t('Back to homepage')),'html' => TRUE));?>
+	    	    	<?php echo l($ucsc_site_name, "<front>", array('attributes' => array('title' => t('Back to homepage')),'html' => TRUE));?>
 	    	  </h1>
     	</div>
 
@@ -127,11 +127,11 @@ if ($ucscv2_fixed_width) {
 // Logic to grab the appropriate template partial.
 if ($is_front) {
 
-	if (theme_get_setting("ucscv2_frontpage_template") == "leftcol") {
+	if (theme_get_setting("ucsc_frontpage_template") == "leftcol") {
 		require_once("partials/page-home-left.tpl.php");
-	} elseif (theme_get_setting("ucscv2_frontpage_template") == "rightcol") {
+	} elseif (theme_get_setting("ucsc_frontpage_template") == "rightcol") {
 		require_once("partials/page-home-right.tpl.php");
-	} elseif (theme_get_setting("ucscv2_frontpage_template") == "department") {
+	} elseif (theme_get_setting("ucsc_frontpage_template") == "department") {
     require_once("partials/page-home-dept.tpl.php");
   } else {
 		require_once("partials/page-home-default.tpl.php");

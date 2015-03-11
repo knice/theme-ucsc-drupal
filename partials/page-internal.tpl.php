@@ -18,8 +18,8 @@
 	<div id="page-header">
 		<h1 id="page-title"><?php print $title; ?></h1>
 		<span id="sub-logo">
-		<?php if(theme_get_setting("ucscv2_logo_link") != ''): ?>
-			<a href="<?php print theme_get_setting('ucscv2_logo_link'); ?>"><img src="<?php print $logo; ?>" /></a>
+		<?php if(theme_get_setting("ucsc_logo_link") != ''): ?>
+			<a href="<?php print theme_get_setting('ucsc_logo_link'); ?>"><img src="<?php print $logo; ?>" /></a>
 		<?php else: ?>
 			<img src="<?php print $logo; ?>" />
 		<?php endif; ?>
