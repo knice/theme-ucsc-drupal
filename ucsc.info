@@ -1,6 +1,6 @@
 name = UCSC
-description = The new standard theme for UC Santa Cruz web sites.
-version = 3.0
+description = Responsive Drupal Theme for UCSC websites.
+version = 3.0.1
 core = 7.x
 engine = phptemplate
 
