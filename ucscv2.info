@@ -1,6 +1,6 @@
-name = UCSCv2
+name = UCSC
 description = The new standard theme for UC Santa Cruz web sites.
-version = 1.0
+version = 3.0
 core = 7.x
 engine = phptemplate
 
