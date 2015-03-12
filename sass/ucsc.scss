@@ -5,6 +5,7 @@
 
 // Base styles and variables
 @import "base/reset";
+@import "base/960_12_fluid";
 @import "base/typography";
 @import "base/variables";
 
@@ -17,7 +18,7 @@
 
 // These are styles for Drupal regions
 // And regions of the page.
-@import "regions/accessibilitylinks";
+@import "regions/accessibility-links";
 @import "regions/breadcrumbs";
 @import "regions/footer";
 @import "regions/global-nav-and-search";
