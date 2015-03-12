@@ -1,0 +1,31 @@
+/**
+* = RIGHT COLUMN STYLES
+*/
+#right-content .block-title {
+    font-weight: bold;
+    margin: 0.4em 0;
+    font-size:13px;
+    border-bottom: 4px solid #f2f0e4;
+    padding-bottom: 0.4em;
+    margin-top:0;
+    color:rgb(93, 92, 91);;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+    line-height: 1.4em;
+    }
+
+#right-content .inner .content {
+    font-size: 88% !important;
+    width: 90%;
+    padding: 0;
+    margin: 0 0 1em 0;
+    }
+
+#right-content img {
+    background-color: #f2f0e4;
+    padding: 4px;
+    }
+
+#right-content img[align="left"],
+#right-content img.left { margin: 0 2px 2px 0; }
+#right-content img[align="right"],
+#right-content img.right { margin: 0 0 2px 2px; }

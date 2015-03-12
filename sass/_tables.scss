@@ -1,0 +1,19 @@
+  /* 
+
+  Table customizations
+
+  */
+  .alt tr:nth-child(even) { background-color:#f2f0e4; }
+  .full { width:100%; }
+  .align-top td { vertical-align:top; }
+  .borders,
+  .borders th,
+  .borders tr,
+  .borders td { border:1px solid #5D5C5B; }
+
+  tr.even {
+    border-bottom:none;
+    background-color: #F5F3EB;
+    background-color:rgba(255,255,255,0.5);
+    }
+

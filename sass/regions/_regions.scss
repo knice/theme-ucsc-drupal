@@ -1,0 +1,57 @@
+/**
+* = REGIONS
+*/
+
+  #above-content,
+  #content,
+  #below-content,
+  #right-content .inner {
+    background-color:#ece9d8;
+    color:#5d5c5b;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    padding:15px;
+    margin:0px 0px 20px 8px;
+    border-bottom:1px solid #e5e4de;
+    }
+
+  #above-content {
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    padding:0px;
+    background-color:#ece9d8;
+    color:#8e8c87;
+    border-bottom:1px solid #e5e4de;
+    margin:0px 0px 10px 8px;
+    }
+
+  #above-content .block .content {
+    overflow:hidden;
+    }
+
+  #below-content {
+    padding:10px;
+    color:#8e8c87;
+    border-bottom:1px solid #e5e4de;
+    margin:0px 0px 10px 0px;
+    }
+
+  #footer {
+    letter-spacing:0.05em;
+    color:#5d5c5b;
+    text-transform:uppercase;
+    margin-top:1em;
+    padding-top:1em;
+    border-top:1px solid #dedcd1;
+    font-size:0.65em;
+    }
+
+  #footer a {
+    font-size:9px;
+    }
+
+  .front #three_column .block .content {
+      min-height:226px;
+  }

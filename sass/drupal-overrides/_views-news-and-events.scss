@@ -1,0 +1,64 @@
+/**
+*  News and Events article list page.
+*    Note: this assumes a view named 'newsandevents'
+*/
+
+#content .view-newsandevents li {
+  background-image: none;
+    clear: left;
+    list-style-type: none;
+    margin: 0 0 1em;
+    min-height: 90px;
+    padding-left: 0;
+}
+
+#content .view-newsandevents .views-field-created {
+    color: #929290;
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+#content .view-newsandevents img {
+    background-color: #F9F8F2;
+    float: left;
+    margin: 0 8px 8px 0;
+    padding: 4px;
+}
+
+#content .view-newsandevents .views-field-title {
+  line-height: 1.3em;
+    margin: 0 0 0.6em;
+  margin-bottom: 2px;
+  color: #605F5D;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+  padding: 0;
+}
+
+#content .view-newsandevents .views-field-body {
+  font-size: 11px;
+  margin: 0 0 1em;
+  line-height: 19px;
+}
+
+#content .icon img {
+  margin: 0px;
+  padding: 0px;
+  float: none;
+  clear: none;
+  background-color: transparent;
+}
+
+#content th.active img {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+#content table.system-status-report th,
+#content table.system-status-report tr.merge-up td {
+  border: 0px;
+  padding: 2px 2px 2px 30px;
+  margin: 0px;
+}

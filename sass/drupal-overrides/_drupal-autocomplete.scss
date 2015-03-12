@@ -1,0 +1,40 @@
+/*
+** Autocomplete styles:
+** pulled and modified from system.css
+*/
+
+/* Suggestion list */
+#content #autocomplete {
+  position: absolute;
+  border: 1px solid;
+  overflow: hidden;
+  z-index: 100;
+}
+#content #autocomplete ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#content #autocomplete li {
+  background: #fff;
+  color: #000;
+  white-space: pre;
+  cursor: default;
+  margin: 0;
+}
+#content #autocomplete li.selected {
+  background: #F1B521;
+  color: #000;
+}
+
+
+
+/* Animated throbber */
+html.js #content input.form-autocomplete {
+  background-image: url(../images/throbber.gif);
+  background-repeat: no-repeat;
+  background-position: 99% 5px; /* LTR */
+}
+html.js #content input.throbbing {
+  background-position: 99% -15px; /* LTR */
+}

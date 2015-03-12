@@ -1,0 +1,33 @@
+/**
+* = ACCESSIBILITY LINKS: hidden until they receive :focus
+*/
+  #access-links ul,
+  #access-links li { overflow: hidden !important; width:100%; }
+
+  #access-links,
+  #access-links li {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    position: relative;
+    }
+
+  #access-links li a {
+    background-color:#fff;
+    display:block;
+    font-size:1.6em;
+    left:900em;
+    margin:0;
+    padding:20px;
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:1000 !important;
+    }
+
+  #access-links li a:focus,
+  #access-links li a:hover {
+    background-color:#007799;
+    color:#ffffff;
+    left:0;
+    }

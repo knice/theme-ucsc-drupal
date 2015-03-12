@@ -1,0 +1,70 @@
+  /* Drupal form overrides */
+  fieldset.collapsible {
+    border:1px solid #8E8C87;
+    margin:1.4em 0 !important;
+    padding:10px;
+    }
+  fieldset.collapsible.collapsed {
+    border:none;
+    padding:2px 10px;
+    }
+ 
+  .form-item label {
+    font-weight: bold;
+    color: #545454;
+    text-align:left;
+    }
+  .webform-grid th {
+    font-weight: normal;
+    }
+
+  .form-item .description,
+  .fieldset-wrapper,
+  .form-item {
+    margin-top: 0;
+  }
+
+  fieldset .form-item { padding-bottom:1em; border-bottom: 1px solid #c7c4b7; }
+
+  .form-item.password-parent,
+  .form-item.confirm-parent { margin-bottom: 1em; border: none; }
+
+  .options .form-item,
+  .form-radios .form-item,
+  fieldset .form-item:last-child { border:none; margin-bottom: 0.2em; padding-bottom: 0.2em; }
+
+  #content .form-item-date select {
+    display: inline;
+  }
+
+#content .form-item input.error,
+#content .form-item textarea.error,
+#content .form-item select.error {
+  border: 2px solid red;
+}
+
+/* Field labels */
+.field .field-label {
+  margin:1.2em 0 0.2em 0;
+}
+
+#content textarea {height:12em; margin-bottom:0; }
+
+div.wysiwygToolbar div, div.wysiwygToolbar div table tr, div.wysiwygToolbar div table tr td {
+  float:left;
+  clear:none;
+  height:20px;
+  max-height:20px;
+  padding:0px;
+  margin:0px;
+  border:0px;
+  }
+
+
+
+#tinymce {
+  background-color:#ffffff;
+  padding:8px;
+  font-size:9pt;
+  line-height:12pt;
+  }

@@ -1,0 +1,27 @@
+  /* 
+
+  Lists Customizations
+
+   */
+  ul.menu li,
+  #toolbar ul li {
+    list-style-image:none;
+    background-image:none;
+    }
+
+  ul > li,
+  ul li ul li,
+  ul.menu li {
+    background:url(../images/bullet.gif) no-repeat left 5px;
+    list-style:none;
+    padding:0px 0px 0px 15px;
+    margin:0 0 0.4em 0;
+    }
+
+  .item-list ul li {
+    list-style:none;
+    margin:0 0 0.4em 0;
+    padding:0 0 0 15px;
+    }
+
+

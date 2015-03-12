@@ -1,0 +1,63 @@
+@media print {
+
+  *,
+  html,
+  body {
+    background-color:#ffffff;
+    color:#000000;
+    }
+
+  #utility-nav,
+  #search,
+  #ucsc-logo,
+  #main-nav,
+  #breadcrumbs,
+  #above-content,
+  #left-content,
+  #footer {
+    display:none;
+    float:none;
+    }
+
+  .grid_9.pull_1,
+  .grid_9.push_3 {
+    left:0;
+    width:100%;
+    padding:0;
+    margin:0;
+
+    }
+
+  #outer,
+  #wrap {
+    background-color:#ffffff;
+    margin:10pt;
+    width:auto !important;
+    }
+
+  .container_12 {
+    left:0 !important;
+    width:100% !important;
+    }
+
+  #content {
+    background-color:#ffffff;
+    float:none;
+    width:100%;
+    margin:0;
+    left:0;
+    padding:0;
+    }
+
+  a {
+    color:teal;
+    text-decoration:underline;
+    }
+
+  #site-title { margin-top:0; }
+  #site-title a {
+    font-size:16px !important;
+    padding:0;
+    }
+
+}

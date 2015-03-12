@@ -1,0 +1,17 @@
+ /*
+ *  = Reset styles for lists
+ *    masquerading as drop down menus
+ */
+  #content .ctools-content ul,
+  #content .ctools-content ul li {
+    background-image:none;
+    list-style:none;
+    padding:2px 0px;
+    margin:0;
+    }
+
+  #content .ctools-content ul {
+   padding:0px;
+  }
+
+  

@@ -1,0 +1,52 @@
+/**
+* = MAIN CONTENT STYLES
+*/
+
+
+  #content {
+    clear: both;
+  }
+
+  #content p {
+    margin:0px 0px 1em 0px;
+    font-size:12px;
+    line-height:1.6em;
+    }
+
+  #content > img {
+      background-color: #F9F8F2;
+      margin: 10px;
+      padding: 4px;
+  }
+
+  #content ul,
+  #content ol {
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+
+  #left-content .block .content,
+  #below-content .block .content {
+    min-height:10px;
+    }
+
+  #below-content p {
+    background-color:#ece9d8;
+    color:#5d5c5b;
+    margin:0px;
+    border:0px;
+    }
+
+  #content .plain {
+    background-color:transparent;
+    padding:0;
+    border:none;
+    }
+
+
+
+
+#content div.indentation {
+  clear:none;
+  }

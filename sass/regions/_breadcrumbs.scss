@@ -1,0 +1,35 @@
+/**
+* Breadcrumb navigation
+*/
+
+.breadcrumb {
+  margin:1em 0 22px 1em;
+}
+
+#breadcrumbs {
+  clear:both;
+  display:block;
+  margin:-10px 0 0 0;
+  font-size:9px;
+  line-height:16px;
+  }
+
+#breadcrumbs ul li {
+  display:inline;
+  padding:0;
+  background-image:none;
+  }
+
+#breadcrumbs ul li:after {
+  content:" » ";
+  font-size:11px;
+  }
+
+#breadcrumbs ul li:last-child:after {
+  content:"";
+  }
+
+#breadcrumbs a {
+  padding:0 3px;
+  }
+

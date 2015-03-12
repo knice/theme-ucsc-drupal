@@ -1,0 +1,55 @@
+/* 
+*   Main file for UCSC theme styles. 
+*   This file will compile into css/ucsc.css
+*/
+
+// Base styles and variables
+@import "base/reset";
+@import "base/typography";
+@import "base/variables";
+
+// The styles for the core layout
+@import "layouts/layout-container";
+@import "layouts/layout-front-page";
+@import "layouts/layout-full-width";
+@import "layouts/layout-left-column";
+@import "layouts/layout-right-column";
+
+// These are styles for Drupal regions
+// And regions of the page.
+@import "regions/accessibilitylinks";
+@import "regions/breadcrumbs";
+@import "regions/footer";
+@import "regions/global-nav-and-search";
+@import "regions/logo-and-title";
+@import "regions/main-content";
+@import "regions/main-navigation";
+@import "regions/messages";
+@import "regions/page-title";
+@import "regions/regions";
+
+// These override some specific Drupal
+// system or module styles
+@import "drupal-overrides/drupal-admin-overrides";
+@import "drupal-overrides/drupal-autocomplete";
+@import "drupal-overrides/drupal-ctools-overrides";
+@import "drupal-overrides/drupal-form-overrides";
+@import "drupal-overrides/drupal-login-form";
+@import "drupal-overrides/drupal-tabs";
+@import "drupal-overrides/drupal-views-overrides";
+@import "drupal-overrides/drupal-views-table-overrides";
+@import "drupal-overrides/views-news-and-events";
+
+// Currently homeless, these files will likely
+// incorporate into other folders as we
+// make more sense of the project.
+@import "alignment-classes";
+@import "blocks";
+@import "callouts";
+@import "columns";
+@import "lists";
+@import "more-links";
+@import "tables";
+
+// Print styles
+@import "print";
