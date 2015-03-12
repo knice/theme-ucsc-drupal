@@ -14,20 +14,8 @@
 		<div class="grid_12">
 	<?php } ?>
 
-	<?php if ($logo): ?>
-	<div id="page-header">
 		<h1 id="page-title"><?php print $title; ?></h1>
-		<span id="sub-logo">
-		<?php if(theme_get_setting("ucsc_logo_link") != ''): ?>
-			<a href="<?php print theme_get_setting('ucsc_logo_link'); ?>"><img src="<?php print $logo; ?>" /></a>
-		<?php else: ?>
-			<img src="<?php print $logo; ?>" />
-		<?php endif; ?>
-	</div>
-	<?php else: ?>
-		<h1 id="page-title"><?php print $title; ?></h1>
-	<?php endif; ?>
-
+	
 	<?php if($page["above_content"]): ?>
 	  <div id="above-content" class="grid_12">
 	    <?php print render($page["above_content"]); ?>

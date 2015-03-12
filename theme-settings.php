@@ -65,20 +65,11 @@ function ucsc_form_system_theme_settings_alter(&$form, &$form_state) {
     "#description" => "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are blog for the blog page and blog/* for every personal blog. <front> is the front page.",
   );
 
-  ################################################################################
-  # these fields control how the default drupal logo fields are mixed with the   #
-  # ucsc logo link field                                                       #
-  ################################################################################
+  ####################
+  # UCSC logo upload #
+  ####################
 
   $form["logo"]["settings"]["logo_path"]["#weight"] = 9;
-
-  $form["logo"]["settings"]["ucsc_logo_link"] = array(
-    "#type" => "textfield",
-    "#title" => t("Optional URL for custom logo"),
-    "#default_value" => theme_get_setting("ucsc_logo_link"),
-    "#weight" => 10,
-  );
-
   $form["logo"]["settings"]["logo_upload"]["#weight"] = 11;
 
   return $form;
