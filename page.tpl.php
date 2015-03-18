@@ -53,16 +53,16 @@ if ($ucsc_fixed_width) {
 
 
 	<!-- Accessibility links. Hidden until they receive :focus -->
-  <ul id="access-links">
-      <li><a href="#content">Skip to main content</a></li>
-      <li><a href="#main-nav">Skip to primary navigation</a></li>
+  <ul class="access-links">
+      <li><a href="#main">Skip to main content</a></li>
+      <li><a href="#navigation">Skip to primary navigation</a></li>
   </ul>
 
 <div class="wrap">
 <div class="container_12">
 
     	<div class="grid_9 omega">
-    		<ul id="utility-nav">
+    		<ul class="utility-nav">
     			<li class="home"><a href="http://www.ucsc.edu">University Home</a></li>
     			<li><a href="http://my.ucsc.edu" title="Go to the MyUCSC portal">MyUCSC</a></li>
     			<li><a href="http://www.ucsc.edu/tools/people.html" title="Find People - UCSC People Search">People</a></li>
@@ -160,12 +160,12 @@ if ($is_front) {
   ?>
 
 	<?php if($page["footer"]): ?>
-    <div class="grid_6 push_6" id="footer-links">
+    <div class="grid_6 push_6 footer-links">
 		  <?php print render($page["footer"]); ?>
     </div>
 	<?php endif; ?>
 
-	<div class="<?php print $footer_grid_class; ?>" id="campus-info">
+	<div class="<?php print $footer_grid_class; ?> campus-info">
 		<p>This site is maintained by:
 <?php
 
