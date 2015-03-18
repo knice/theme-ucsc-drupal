@@ -43,9 +43,9 @@ if ($page_match) {
 }
 
 if ($ucsc_fixed_width) {
-  echo "<div id=\"outer\" class=\"fixed-width\">\n";
+  echo "<div class=\"fixed-width outer\">\n";
 } else {
-  echo "<div id=\"outer\" class=\"full-width\">\n";
+  echo "<class=\"full-width outer\">\n";
 }
 
 ?>
@@ -58,7 +58,7 @@ if ($ucsc_fixed_width) {
       <li><a href="#main-nav">Skip to primary navigation</a></li>
   </ul>
 
-<div id="wrap" class="rob-was-here">
+<div class="wrap">
 <div class="container_12">
 
     	<div class="grid_9 omega">
@@ -71,7 +71,7 @@ if ($ucsc_fixed_width) {
     		</ul>
     	</div>
 
-    	<div class="grid_3 omega" id="search">
+    	<div class="grid_3 omega search">
           <?php print render($page["search"]); ?>
     	</div>
 
@@ -116,7 +116,7 @@ if ($ucsc_fixed_width) {
 
     <div class="clear"></div>
 
-    	<div class="grid_12 alpha" id="main-nav">
+    	<div class="grid_12 alpha main-nav">
     		<?php print render($page["main_menu"]); ?>
     	</div>
 
@@ -146,7 +146,7 @@ if ($is_front) {
 
 <div class="clear"></div>
 
-<div id="footer">
+<div class="footer">
 
   <?php /* Set classes for footer divs */
     if ($page["footer"]) {
