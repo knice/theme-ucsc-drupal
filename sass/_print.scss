@@ -7,13 +7,13 @@
     color:#000000;
     }
 
-  #utility-nav,
+  .utility-nav,
   .search,
-  #ucsc-logo,
+  .logo,
   .main-nav,
-  #breadcrumbs,
-  #above-content,
-  #left-content,
+  .breadcrumbs,
+  .above-content,
+  .left-content,
   .footer {
     display:none;
     float:none;
@@ -54,8 +54,8 @@
     text-decoration:underline;
     }
 
-  #site-title { margin-top:0; }
-  #site-title a {
+  .site-title { margin-top:0; }
+  .site-title a {
     font-size:16px !important;
     padding:0;
     }

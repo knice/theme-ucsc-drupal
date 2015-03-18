@@ -1,7 +1,7 @@
 /**
 * = FRONT PAGE: grid styles
 */
-  #three_column .block .content {
+  .three_column .block .content {
     border-bottom:solid 1px #dad8c8;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
@@ -12,7 +12,7 @@
     background-color:#ece9d8;
     }
 
-  #three_column .block .content .view-content img {
+  .three_column .block .content .view-content img {
     background: none repeat scroll 0 0 #FFFFFF;
       border-bottom: 1px solid #D5D2C3;
       padding: 5px;
@@ -21,36 +21,36 @@
       margin: 0 10px 10px 0;
     }
 
-  #three_column .block .content .view-content .views-row {
+  .three_column .block .content .view-content .views-row {
     clear: both;
     }
 
-  #three_column .block .content .view-content .views-field-created {
+  .three_column .block .content .view-content .views-field-created {
     color: #929290;
       font-size: 9px;
       letter-spacing: 1px;
     }
 
-  #four_column {
+  .four_column {
     margin-top:12px;
     font-size:11px;
     line-height:16px;
     }
 
-  #four_column .block .content {
+  .four_column .block .content {
     background-color:transparent;
     font-size:11px;
     padding:0;
     }
 
-  #four_column .block .content ul,
-  #four_column .block .content p {
+  .four_column .block .content ul,
+  .four_column .block .content p {
     padding:0;
     color:#71706e;
     margin:0 0 15px 0;
     }
 
-  #four_column .block-title {
+  .four_column .block-title {
     color:#5d5c5b;
     margin:0 0 10px 0;
     text-transform:uppercase;
@@ -58,14 +58,14 @@
     line-height: 1.4em;
     }
 
-    #three_column .block-title span,
-    #four_column .block-title span {
+    .three_column .block-title span,
+    .four_column .block-title span {
       font-style:normal;
       font-weight:bold;
       color:#585755;
     }
 
-  #three_column .block-title {
+  .three_column .block-title {
     margin:0px 0px 10px 0px;
     padding:6px;
     border:1px solid #e5e4de;
@@ -76,7 +76,7 @@
     line-height: 1.4em;
     }
 
-  #four_column p {
+  .four_column p {
     padding:4px;
     color:#8e8c87;
     font-size:9pt;
