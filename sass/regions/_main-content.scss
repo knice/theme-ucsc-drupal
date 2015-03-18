@@ -3,30 +3,30 @@
 */
 
 
-  #content {
+  .content {
     clear: both;
   }
 
-  #content p {
+  .content p {
     margin:0px 0px 1em 0px;
     font-size:12px;
     line-height:1.6em;
     }
 
-  #content > img {
+  .content > img {
       background-color: #F9F8F2;
       margin: 10px;
       padding: 4px;
   }
 
-  #content ul,
-  #content ol {
+  .content ul,
+  .content ol {
     font-size: 12px;
     line-height: 19px;
     margin-bottom: 10px;
   }
 
-  #left-content .block .content,
+  .left_content .block .content,
   .below_content .block .content {
     min-height:10px;
     }
@@ -38,7 +38,7 @@
     border:0px;
     }
 
-  #content .plain {
+  .content .plain {
     background-color:transparent;
     padding:0;
     border:none;
@@ -47,6 +47,6 @@
 
 
 
-#content div.indentation {
+.content div.indentation {
   clear:none;
   }

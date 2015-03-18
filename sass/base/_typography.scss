@@ -108,11 +108,11 @@
 
   input[type="text"],
   input[type="email"],
-  #content input[type="text"],
+  .content input[type="text"],
   input[type="password"],
-  #content input[type="password"],
-  #content select,
-  #content textarea {
+  .content input[type="password"],
+  .content select,
+  .content textarea {
     border:1px solid #c7c4b7;
     padding:4px;
     font-size:12px;

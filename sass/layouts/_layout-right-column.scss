@@ -1,7 +1,7 @@
 /**
 * = RIGHT COLUMN STYLES
 */
-#right-content .block-title {
+.right_content .block-title {
     font-weight: bold;
     margin: 0.4em 0;
     font-size:13px;
@@ -13,19 +13,19 @@
     line-height: 1.4em;
     }
 
-#right-content .inner .content {
+.right_content .inner .content {
     font-size: 88% !important;
     width: 90%;
     padding: 0;
     margin: 0 0 1em 0;
     }
 
-#right-content img {
+.right_content img {
     background-color: #f2f0e4;
     padding: 4px;
     }
 
-#right-content img[align="left"],
-#right-content img.left { margin: 0 2px 2px 0; }
-#right-content img[align="right"],
-#right-content img.right { margin: 0 0 2px 2px; }
+.right_content img[align="left"],
+.right_content img.left { margin: 0 2px 2px 0; }
+.right_content img[align="right"],
+.right_content img.right { margin: 0 0 2px 2px; }

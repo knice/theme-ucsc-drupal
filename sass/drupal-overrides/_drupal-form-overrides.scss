@@ -33,13 +33,13 @@
   .form-radios .form-item,
   fieldset .form-item:last-child { border:none; margin-bottom: 0.2em; padding-bottom: 0.2em; }
 
-  #content .form-item-date select {
+  .content .form-item-date select {
     display: inline;
   }
 
-#content .form-item input.error,
-#content .form-item textarea.error,
-#content .form-item select.error {
+.content .form-item input.error,
+.content .form-item textarea.error,
+.content .form-item select.error {
   border: 2px solid red;
 }
 
@@ -48,7 +48,7 @@
   margin:1.2em 0 0.2em 0;
 }
 
-#content textarea {height:12em; margin-bottom:0; }
+.content textarea {height:12em; margin-bottom:0; }
 
 div.wysiwygToolbar div, div.wysiwygToolbar div table tr, div.wysiwygToolbar div table tr td {
   float:left;

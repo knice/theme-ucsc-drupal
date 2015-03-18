@@ -6,7 +6,7 @@
   margin:1em 0 22px 1em;
 }
 
-#breadcrumbs {
+.breadcrumbs {
   clear:both;
   display:block;
   margin:-10px 0 0 0;
@@ -14,22 +14,22 @@
   line-height:16px;
   }
 
-#breadcrumbs ul li {
+.breadcrumbs ul li {
   display:inline;
   padding:0;
   background-image:none;
   }
 
-#breadcrumbs ul li:after {
+.breadcrumbs ul li:after {
   content:" » ";
   font-size:11px;
   }
 
-#breadcrumbs ul li:last-child:after {
+.breadcrumbs ul li:last-child:after {
   content:"";
   }
 
-#breadcrumbs a {
+.breadcrumbs a {
   padding:0 3px;
   }
 

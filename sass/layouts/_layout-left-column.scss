@@ -2,32 +2,32 @@
 * = LEFT COLUMN STYLES
 */
 
-  #left-content .block {
+  .left_content .block {
     padding:0;
     margin-bottom:1.8em;
     }
 
-  #left-content .block .content {
+  .left_content .block .content {
     padding:0;
     margin:0.8em 0;
     }
 
-  #left-content ul.plain {
+  .left_content ul.plain {
     margin: 0;
     padding: 0;
     }
 
-  #left-content li {
+  .left_content li {
     margin-bottom: 1em;
     }
 
-  #left-content .plain li {
+  .left_content .plain li {
     background-image: none;
     list-style: none;
     padding-left: 0;
     }
 
-  #left-content .menu {
+  .left_content .menu {
     margin:0;
     padding:0;
     border-top:#e5e4de 1px solid;
@@ -36,7 +36,7 @@
     width:188px;
     }
 
-  #left-content .menu li {
+  .left_content .menu li {
     margin:0;
     padding:0;
     border-bottom:#e5e4de 1px solid;
@@ -44,10 +44,10 @@
     list-style:none;
     }
 
-  #left-content .menu li ul { margin-bottom:-1px; width:auto; }
-  #left-content .menu li ul ul { margin-left:0; width:auto; }
+  .left_content .menu li ul { margin-bottom:-1px; width:auto; }
+  .left_content .menu li ul ul { margin-left:0; width:auto; }
 
-  #left-content .menu li li li {
+  .left_content .menu li li li {
     border-bottom: none;
     background:transparent url(../images/bullet.gif) no-repeat 12px 10px;
     padding-left: 1.6em;
@@ -55,25 +55,25 @@
     width: 87%;
     }
 
-  #left-content .menu li li a {
+  .left_content .menu li li a {
     margin-left:0px;
     padding-left:12px;
     width:94%;
     }
 
-  #left-content .menu li li li a {
+  .left_content .menu li li li a {
     padding-left:0.4em;
     width:100%;
     line-height:1em;
     background-image:none;
     }
 
-  #left-content ul .active {
+  .left_content ul .active {
     display:block;
     background:#ece9d8 url(../images/navigation-arrow.gif) no-repeat right center;
     }
 
-  #left-content .menu li a {
+  .left_content .menu li a {
     display:block;
     width:100%;
     max-width:184px;
@@ -81,6 +81,6 @@
     padding:6px 0px;
     }
 
-  #left-content li a:focus,
-  #left-content li a:hover { background-color:#ece9d8; }
-  #left-content ul li .last { border-bottom:none; }
+  .left_content li a:focus,
+  .left_content li a:hover { background-color:#ece9d8; }
+  .left_content ul li .last { border-bottom:none; }

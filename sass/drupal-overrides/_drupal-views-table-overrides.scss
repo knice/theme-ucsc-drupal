@@ -1,4 +1,4 @@
-#content .views-table {
+.content .views-table {
   background: none repeat scroll 0 0 #ECE9D8;
     border-bottom: 1px solid #DAD8C8;
     -moz-border-radius:5px;
@@ -12,18 +12,18 @@
   width: 100%;
   }
 
-#content .views-table tr.even, tr.odd {
+.content .views-table tr.even, tr.odd {
     background-color: #ECE9D8;
     border-bottom: none;
     padding: none;
 }
 
-#content .view-content .even, #content .view-content .views-row-even {
+.content .view-content .even, .content .view-content .views-row-even {
   border-bottom: 1px solid #DEDCD1;
   background-color: #F2F0E4;
 }
 
-#content .views-table td {
+.content .views-table td {
     border-bottom: 1px solid #DEDCD1;
     padding: 2px 12px 2px 0;
 }
