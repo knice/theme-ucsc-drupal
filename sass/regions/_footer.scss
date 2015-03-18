@@ -3,7 +3,7 @@
 .footer .block .content { padding:0px; }
 .footer li { background-image: none; padding: 0; margin: 0 0 0 6px; }
 
-.footer-links {
+.footer_links {
   line-height:40px;
   text-align:center;
   padding:0px;
@@ -11,11 +11,11 @@
   overflow: hidden;
   }
 
-.campus-info p {
+.campus_info p {
   margin:0 0 0.2em;
   }
 
-.footer-links a {
+.footer_links a {
   padding:0px 5px;
   }
 
@@ -25,15 +25,15 @@
 * Footer styles
 */
 
-.footer-links h2 {
+.footer_links h2 {
   display:none;
   }
 
-.footer-links ul {
+.footer_links ul {
   float:right;
   }
 
-.footer-links li {
+.footer_links li {
   float:left;
   list-style:none;
   }

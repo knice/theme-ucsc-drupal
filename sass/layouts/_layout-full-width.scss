@@ -2,42 +2,42 @@
 *  Full-width page styles
 */
 
-.outer.full-width,
-.full-width .wrap,
-.full-width .container_12 {
+.outer.full_width,
+.full_width .wrap,
+.full_width .container_12 {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-.full-width .container_12 .grid_12,
-.full-width #content {
+.full_width .container_12 .grid_12,
+.full_width #content {
   margin-left: 0;
 }
 
-.full-width .container_12 { width: 96%; margin:0 2em 0 2em; min-width: 860px; }
+.full_width .container_12 { width: 96%; margin:0 2em 0 2em; min-width: 860px; }
 
-.full-width #utility-nav {
+.full_width .utility_nav {
   float: right;
   margin-right: 0.6em;
 }
 
-.full-width #utility-nav .home {
+.full_width .utility_nav .home {
     width:auto;
 }
 
-.full-width .search {
+.full_width .search {
   min-width: 220px
 }
 
-.full-width #left-content {
+.full_width #left-content {
   max-width:190px;
 }
 
-.full-width .wrap .grid_9.push_3 {
+.full_width .wrap .grid_9.push_3 {
   left:220px;
 }
 
-.fixed-width .search input[type='text'] {
+.fixed_width .search input[type='text'] {
   width: 56%;
 }

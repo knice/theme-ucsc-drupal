@@ -1,18 +1,18 @@
 /**
 * = ACCESSIBILITY LINKS: hidden until they receive :focus
 */
-  #access-links ul,
-  #access-links li { overflow: hidden !important; width:100%; }
+  .access_links ul,
+  .access_links li { overflow: hidden !important; width:100%; }
 
-  #access-links,
-  #access-links li {
+  .access_links,
+  .access_links li {
     margin:0;
     padding:0;
     overflow:hidden;
     position: relative;
     }
 
-  #access-links li a {
+  .access_links li a {
     background-color:#fff;
     display:block;
     font-size:1.6em;
@@ -25,8 +25,8 @@
     z-index:1000 !important;
     }
 
-  #access-links li a:focus,
-  #access-links li a:hover {
+  .access_links li a:focus,
+  .access_links li a:hover {
     background-color:#007799;
     color:#ffffff;
     left:0;

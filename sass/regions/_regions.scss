@@ -2,9 +2,9 @@
 * = REGIONS
 */
 
-  .above-content,
+  .above_content,
   #content,
-  .below-content,
+  .below_content,
   #right-content .inner {
     background-color:#ece9d8;
     color:#5d5c5b;
@@ -16,7 +16,7 @@
     border-bottom:1px solid #e5e4de;
     }
 
-  .above-content {
+  .above_content {
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
@@ -27,11 +27,11 @@
     margin:0px 0px 10px 8px;
     }
 
-  .above-content .block .content {
+  .above_content .block .content {
     overflow:hidden;
     }
 
-  .below-content {
+  .below_content {
     padding:10px;
     color:#8e8c87;
     border-bottom:1px solid #e5e4de;
