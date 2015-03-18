@@ -79,7 +79,7 @@ if ($ucsc_fixed_width) {
 
     	<div class="grid_12">
 
-	    	<a href="http://www.ucsc.edu" title="Go to UCSC homepage" id="logo">UC Santa Cruz home</a>
+	    	<a href="http://www.ucsc.edu" title="Go to UCSC homepage" class="logo">UC Santa Cruz home</a>
 
 	    	  <?php
 
@@ -109,7 +109,7 @@ if ($ucsc_fixed_width) {
 
           ?>
 
-	    	  <h1 id="site-title" class="<?php print $title_class; ?>">
+	    	  <h1 class="site-title <?php print $title_class; ?>">
 	    	    	<?php echo l($ucsc_site_name, "<front>", array('attributes' => array('title' => t('Back to homepage')),'html' => TRUE));?>
 	    	  </h1>
     	</div>
