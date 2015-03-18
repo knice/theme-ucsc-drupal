@@ -1,16 +1,16 @@
 /**
 * Main navigation
 */
-  #main-nav { margin-top:14px; }
+  .main-nav { margin-top:14px; }
 
-  #main-nav.grid_12 { margin-left: 0;}
+  .main-nav.grid_12 { margin-left: 0;}
 
   /* Override some defaults from above and from system.css */
-  #main-nav .block .content,
+  .main-nav .block .content,
   .front #above-content { padding:0; }
-  #main-nav .block ul { padding:0; }
+  .main-nav .block ul { padding:0; }
 
-  #main-nav .menu {
+  .main-nav .menu {
     background:transparent url(../images/button_background.jpeg) repeat-x;
     background-image:-moz-linear-gradient(top,#f4f1e6,#ffffff);
     background-image:-webkit-gradient(linear,0% 0%,0% 100%,from(#f4f1e6),to(#ffffff));
@@ -25,7 +25,7 @@
     margin:0px 0 10px 0;
     }
 
-  #main-nav li {
+  .main-nav li {
     border-left:1px solid #ffffff;
     border-right:1px solid #e7e5de;
     float:left;
@@ -40,7 +40,7 @@
     background-color:transparent;
     }
 
-  #main-nav li a,
+  .main-nav li a,
   .qsg span {
     background:url(../images/main_nav_off.gif) repeat-x;
     background-image:-moz-linear-gradient(top,#f4f1e6,#ffffff);
@@ -60,10 +60,10 @@
     width:100%;
     }
 
-  #main-nav .menu.hovered,
-  #main-nav li a:focus,
-  #main-nav li a:hover,
-  #main-nav li.qsg span:hover {
+  .main-nav .menu.hovered,
+  .main-nav li a:focus,
+  .main-nav li a:hover,
+  .main-nav li.qsg span:hover {
     color:#ffbd15;
     text-decoration:none;
     background:#296fa3;
@@ -76,7 +76,7 @@
     text-shadow:none;
     }
 
-  #main-nav li li {
+  .main-nav li li {
     background:none;
     border:none;
     float:none;
@@ -85,7 +85,7 @@
     padding:0;
     }
 
-  #main-nav li li a {
+  .main-nav li li a {
     background:#f9f8f2;
     color:#5585A2;
     height:auto;
@@ -95,8 +95,8 @@
     text-transform:none;
     }
 
-  #main-nav .first a,
-  #main-nav li:first-child a {
+  .main-nav .first a,
+  .main-nav li:first-child a {
     -webkit-border-top-left-radius:5px;
     -webkit-border-bottom-left-radius:5px;
     -moz-border-radius-topleft:5px;
@@ -106,7 +106,7 @@
     }
 
   /* No :first-child rounded corners for nested <li>s */
-  #main-nav li li a {
+  .main-nav li li a {
     -webkit-border-top-left-radius:0px !important;
     -webkit-border-bottom-left-radius:0px !important;
     -moz-border-radius-topleft:0px !important;
@@ -115,16 +115,16 @@
     border-bottom-left-radius:0px !important;
     }
 
-  #main-nav ul > li:first-child { border-left:none; }
-  #main-nav ul > li:last-child { border-right:none; }
+  .main-nav ul > li:first-child { border-left:none; }
+  .main-nav ul > li:last-child { border-right:none; }
 
   /* dropdown menu styles */
 
-  #main-nav li.qsg {
+  .main-nav li.qsg {
     position:relative;
     }
 
-  #main-nav li ul {
+  .main-nav li ul {
     background:#f9f8f2;
     left:-900em;
     position:absolute;
@@ -137,15 +137,15 @@
     z-index:100;
     }
 
-  #main-nav li:hover ul,
-  #main-nav li.hov ul {
+  .main-nav li:hover ul,
+  .main-nav li.hov ul {
     left:auto;
     *left:0px;
     z-index:100;
     }
 
-  #main-nav li li a:focus,
-    #main-nav li li a:hover {
+  .main-nav li li a:focus,
+    .main-nav li li a:hover {
     background:#296fa3;
     background-image:none;
     color:#f9f8f2;

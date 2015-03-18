@@ -8,13 +8,13 @@
     }
 
   #utility-nav,
-  #search,
+  .search,
   #ucsc-logo,
-  #main-nav,
+  .main-nav,
   #breadcrumbs,
   #above-content,
   #left-content,
-  #footer {
+  .footer {
     display:none;
     float:none;
     }
@@ -28,8 +28,8 @@
 
     }
 
-  #outer,
-  #wrap {
+  .outer,
+  .wrap {
     background-color:#ffffff;
     margin:10pt;
     width:auto !important;

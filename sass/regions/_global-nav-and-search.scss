@@ -16,7 +16,7 @@
   width:270px;
 }
 
-#search {
+.search {
   float: right;
   margin: 20px 0px 36px -12px;
   padding: 0px;
@@ -26,17 +26,17 @@
   min-width: 220px;
 }
 
-#search .content {
+.search .content {
   padding: 0;
 }
 
-#search h4,
-#search label {
+.search h4,
+.search label {
   position: absolute;
   right: 900em;
 }
 
-#search input[type='submit'] {
+.search input[type='submit'] {
   float: right;
   border: none;
   font-weight: bold;
@@ -49,7 +49,7 @@
   padding:0.5em;
 }
 
-#search input[type='text'] {
+.search input[type='text'] {
   width: 65%;
   color: #666;
   font-size: 12px;
@@ -60,12 +60,12 @@
   border: none;
 }
 
-#search form input {
+.search form input {
   background-color: rgba(255,255,255,0.8);
   border: 1px solid #8e8c87;
 }
 
-#search form input.query {
+.search form input.query {
   color: #a3a3a1;
   height: 15px;
   line-height: 1em;

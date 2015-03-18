@@ -1,9 +1,9 @@
 /* Hide block title in the footer (but keep it in the HTML for accessibility) */
-#footer .block .title { position:absolute; left:1000em; overflow:hidden; }
-#footer .block .content { padding:0px; }
-#footer li { background-image: none; padding: 0; margin: 0 0 0 6px; }
+.footer .block .title { position:absolute; left:1000em; overflow:hidden; }
+.footer .block .content { padding:0px; }
+.footer li { background-image: none; padding: 0; margin: 0 0 0 6px; }
 
-#footer-links {
+.footer-links {
   line-height:40px;
   text-align:center;
   padding:0px;
@@ -11,11 +11,11 @@
   overflow: hidden;
   }
 
-#campus-info p {
+.campus-info p {
   margin:0 0 0.2em;
   }
 
-#footer-links a {
+.footer-links a {
   padding:0px 5px;
   }
 
@@ -25,15 +25,15 @@
 * Footer styles
 */
 
-#footer-links h2 {
+.footer-links h2 {
   display:none;
   }
 
-#footer-links ul {
+.footer-links ul {
   float:right;
   }
 
-#footer-links li {
+.footer-links li {
   float:left;
   list-style:none;
   }

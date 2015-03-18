@@ -2,8 +2,8 @@
 *  Full-width page styles
 */
 
-#outer.full-width,
-.full-width #wrap,
+.outer.full-width,
+.full-width .wrap,
 .full-width .container_12 {
   width: 100%;
   margin: 0;
@@ -26,7 +26,7 @@
     width:auto;
 }
 
-.full-width #search {
+.full-width .search {
   min-width: 220px
 }
 
@@ -34,10 +34,10 @@
   max-width:190px;
 }
 
-.full-width #wrap .grid_9.push_3 {
+.full-width .wrap .grid_9.push_3 {
   left:220px;
 }
 
-.fixed-width #search input[type='text'] {
+.fixed-width .search input[type='text'] {
   width: 56%;
 }
