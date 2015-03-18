@@ -2,7 +2,7 @@
 <!-- Default homepage template -->
 
 <?php if ($page["above_content"]): ?>
-	<div class="grid_12 above-content">
+	<div class="grid_12 above_content">
 		<?php print render($page["above_content"]); ?>
 	</div>
 	<div class="clear"></div>
@@ -40,7 +40,7 @@
 
 <?php if($page["below_content"]): ?>
 	<div class="clear"></div>
-	<div class="grid_12 below-content">
+	<div class="grid_12 below_content">
 		<?php print render($page["below_content"]); ?>
 	</div>
 <?php endif; ?>
