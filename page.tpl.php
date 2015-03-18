@@ -43,9 +43,9 @@ if ($page_match) {
 }
 
 if ($ucsc_fixed_width) {
-  echo "<div class=\"fixed-width outer\">\n";
+  echo "<div class=\"fixed_width outer\">\n";
 } else {
-  echo "<class=\"full-width outer\">\n";
+  echo "<class=\"full_width outer\">\n";
 }
 
 ?>
@@ -53,7 +53,7 @@ if ($ucsc_fixed_width) {
 
 
 	<!-- Accessibility links. Hidden until they receive :focus -->
-  <ul class="access-links">
+  <ul class="access_links">
       <li><a href="#main">Skip to main content</a></li>
       <li><a href="#navigation">Skip to primary navigation</a></li>
   </ul>
@@ -62,7 +62,7 @@ if ($ucsc_fixed_width) {
 <div class="container_12">
 
     	<div class="grid_9 omega">
-    		<ul class="utility-nav">
+    		<ul class="utility_nav">
     			<li class="home"><a href="http://www.ucsc.edu">University Home</a></li>
     			<li><a href="http://my.ucsc.edu" title="Go to the MyUCSC portal">MyUCSC</a></li>
     			<li><a href="http://www.ucsc.edu/tools/people.html" title="Find People - UCSC People Search">People</a></li>
@@ -86,19 +86,19 @@ if ($ucsc_fixed_width) {
           $site_name_length = strlen($site_name);
 
  	        if ($site_name_length >= 52) {
- 	          $title_class = "title-mega-long";
+ 	          $title_class = "titlemega_long";
  	        } else if ($site_name_length >= 46) {
-	          $title_class = "title-super-long";
+	          $title_class = "title_super_long";
 	        } else if ($site_name_length >= 38) {
-	          $title_class = "title-extra-long";
+	          $title_class = "title_extra_long";
 	        } else if ($site_name_length >= 34) {
-	          $title_class = "title-long";
+	          $title_class = "title_long";
 	        } else if ($site_name_length >= 30) {
-	          $title_class = "title-medium";
+	          $title_class = "title_medium";
 	        } else if ($site_name_length >= 28) {
-	          $title_class = "title-short";
+	          $title_class = "title_short";
 	        } else {
-	          $title_class = "title-standard";
+	          $title_class = "title_standard";
 	        }
 
           $ucsc_site_name = preg_replace(
@@ -109,14 +109,14 @@ if ($ucsc_fixed_width) {
 
           ?>
 
-	    	  <h1 class="site-title <?php print $title_class; ?>">
+	    	  <h1 class="site_title <?php print $title_class; ?>">
 	    	    	<?php echo l($ucsc_site_name, "<front>", array('attributes' => array('title' => t('Back to homepage')),'html' => TRUE));?>
 	    	  </h1>
     	</div>
 
     <div class="clear"></div>
 
-    	<div class="grid_12 alpha main-nav">
+    	<div class="grid_12 alpha main_nav">
     		<?php print render($page["main_menu"]); ?>
     	</div>
 
@@ -160,12 +160,12 @@ if ($is_front) {
   ?>
 
 	<?php if($page["footer"]): ?>
-    <div class="grid_6 push_6 footer-links">
+    <div class="grid_6 push_6 footer_links">
 		  <?php print render($page["footer"]); ?>
     </div>
 	<?php endif; ?>
 
-	<div class="<?php print $footer_grid_class; ?> campus-info">
+	<div class="<?php print $footer_grid_class; ?> campus_info">
 		<p>This site is maintained by:
 <?php
 
