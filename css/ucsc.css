@@ -1791,7 +1791,7 @@ ul.menu li {
 
   */
 .alt tr:nth-child(even) {
-  background-color: #f2f0e4; }
+  background-color: white; }
 
 .full {
   width: 100%; }
@@ -1803,12 +1803,12 @@ ul.menu li {
 .borders th,
 .borders tr,
 .borders td {
-  border: 1px solid #5D5C5B; }
+  border: 1px solid #84827c; }
 
 tr.even {
   border-bottom: none;
-  background-color: #F5F3EB;
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: white;
+  background-color: #84827c; }
 
 @media print {
   *,
@@ -1854,7 +1854,7 @@ tr.even {
     padding: 0; }
 
   a {
-    color: teal;
+    color: #00458c;
     text-decoration: underline; }
 
   .site_title {
