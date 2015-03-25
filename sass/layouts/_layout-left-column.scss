@@ -30,7 +30,7 @@
   .left_content .menu {
     margin:0;
     padding:0;
-    border-top:#e5e4de 1px solid;
+    border-top: $sand-light 1px solid;
     font-size:11px;
     line-height:30px;
     width:188px;
@@ -39,7 +39,7 @@
   .left_content .menu li {
     margin:0;
     padding:0;
-    border-bottom:#e5e4de 1px solid;
+    border-bottom: $sand-light 1px solid;
     background-image:none;
     list-style:none;
     }
@@ -70,7 +70,7 @@
 
   .left_content ul .active {
     display:block;
-    background:#ece9d8 url(../images/navigation-arrow.gif) no-repeat right center;
+    background: $sand-light url(../images/navigation-arrow.gif) no-repeat right center;
     }
 
   .left_content .menu li a {
@@ -82,5 +82,5 @@
     }
 
   .left_content li a:focus,
-  .left_content li a:hover { background-color:#ece9d8; }
+  .left_content li a:hover { background-color: $sand-light; }
   .left_content ul li .last { border-bottom:none; }

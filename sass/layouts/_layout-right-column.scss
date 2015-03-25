@@ -5,11 +5,11 @@
     font-weight: bold;
     margin: 0.4em 0;
     font-size:13px;
-    border-bottom: 4px solid #f2f0e4;
+    border-bottom: 4px solid $sand-light;
     padding-bottom: 0.4em;
     margin-top:0;
-    color:rgb(93, 92, 91);;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+    color: $gray-dark;
+    text-shadow: 1px 1px 0px $gray-dark;
     line-height: 1.4em;
     }
 
@@ -21,7 +21,7 @@
     }
 
 .right_content img {
-    background-color: #f2f0e4;
+    background-color: $sand-light;
     padding: 4px;
     }
 

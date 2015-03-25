@@ -2,8 +2,8 @@
 * = CSS3 column styles
 */
 .columns-2 { padding:10px;
-   background-color:#F9F8F2;
-   border-bottom:1px solid #DAD8C8;padding:14px;
+   background-color: $sand-light;
+   border-bottom:1px solid $gray-dark;padding:14px;
    -webkit-border-radius:4px;
    -moz-column-count:2;
    -webkit-column-count:2;
