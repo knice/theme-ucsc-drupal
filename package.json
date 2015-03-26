@@ -1,0 +1,25 @@
+{
+  "name": "ucsc-drupal",
+  "version": "3.0.0",
+  "description": "Responsive reboot of the 2012 UCSC Drupal theme.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetch": "node app.js"
+  },
+  "author": "Rob Knight",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browser-sync": "^1.8.2",
+    "gulp": "^3.8.5",
+    "gulp-autoprefixer": "0.0.6",
+    "gulp-changed": "^0.3.0",
+    "gulp-clean": "~0.2.4",
+    "gulp-concat": "~2.1.7",
+    "gulp-imagemin": "^0.1.5",
+    "imagemin-svgo": "^4.0.0",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-ruby-sass": "^0.6.0",
+    "gulp-zip": "^0.4.0"
+  }
+}
