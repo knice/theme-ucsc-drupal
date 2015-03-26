@@ -1,18 +1,25 @@
 /**
 * = SHELLS: wrapper divs
 */
-  .outer {
-    width:960px;
-    margin:0 auto 1em auto;
-    background-color: $body-bg;
-    position:relative;
-    /* overflow:hidden; */
-    }
+.outer {
+  background-color: $body-bg;
+  margin:0 auto 1em auto;
+  position:relative;
+  max-width: 960px;
+}
 
-  .wrap {
-    width:860px;
-    margin:0;
-    background-color: $body-bg;
-    }
+.wrap {
+  background-color: transparent;
+  margin: 0;
+  width: 100%;
+}
 
-  .container_12 { width:820px; }
+.row {
+  @include row;
+}
+
+.content,
+.above_content,
+.below_content {
+  @include clearfix;
+}
