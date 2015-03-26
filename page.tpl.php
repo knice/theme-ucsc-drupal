@@ -61,6 +61,7 @@ if ($ucsc_fixed_width) {
 <div class="wrap">
 <div class="container_12">
 
+  <div class="row">
     	<div class="grid_9 omega">
     		<ul class="utility_nav">
     			<li class="home"><a href="http://www.ucsc.edu">University Home</a></li>
@@ -74,10 +75,11 @@ if ($ucsc_fixed_width) {
     	<div class="grid_3 omega search">
           <?php print render($page["search"]); ?>
     	</div>
+  </div>    
 
-      <div class="clear"></div>
+ 
 
-    	<div class="grid_12">
+    	<div class="row grid_12">
 
 	    	<a href="http://www.ucsc.edu" title="Go to UCSC homepage" class="logo">UC Santa Cruz home</a>
 
@@ -114,13 +116,11 @@ if ($ucsc_fixed_width) {
 	    	  </h1>
     	</div>
 
-    <div class="clear"></div>
 
-    	<div class="grid_12 alpha main_nav">
+    	<div class="row grid_12 alpha main_nav">
     		<?php print render($page["main_menu"]); ?>
     	</div>
 
-    <div class="clear"></div>
 
 
 <?php
@@ -144,9 +144,7 @@ if ($is_front) {
  ?>
 
 
-<div class="clear"></div>
-
-<div class="footer">
+<div class="row footer">
 
   <?php /* Set classes for footer divs */
     if ($page["footer"]) {
@@ -191,11 +189,9 @@ echo "</script>\n";
 
 	</div>
 
-	<div class="clear"></div>
-
 </div>
-    <!-- Clearing floated elements from #footer -->
-    <div class="clear"></div>
+
+
 </div><!-- /.container_12 -->
 </div><!-- /#wrap -->
 </div><!-- /#outer -->

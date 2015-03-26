@@ -3,7 +3,7 @@
 	<?php if ($page["sidebar_first"]) { ?>
 		 <div class="grid_9 push_3">
 	<?php } else { ?>
-		<div class="grid_12">
+		<div class="row grid_12">
 	<?php } ?>
 	
 		<h1 class="page_title"><?php print $title; ?></h1>
@@ -20,12 +20,10 @@
 			<?php print render($tabs); ?>
 			<?php print render($action_links); ?>
 			<?php print render($page["content"]); ?>
-			<div class="clear"></div>
 		</div>
 		<?php if($page["below_content"]): ?>
 		    <div class="below_content">
 		        <?php print render($page["below_content"]); ?>
-		        <div class="clear"></div>
 		    </div>
 		<?php endif; ?>
 	</div>

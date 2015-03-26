@@ -5,7 +5,7 @@
 		<h1 class="page_title"><?php print $title; ?></h1>
 
 		<?php if($page["above_content"]): ?>
-		  <div class="above_content" class="grid_12">
+		  <div class="above_content grid_12">
 		    <?php print render($page["above_content"]); ?>
 		  </div>
 		<?php endif; ?>
@@ -15,12 +15,10 @@
 			<?php print render($tabs); ?>
 			<?php print render($action_links); ?>
 			<?php print render($page["content"]); ?>
-			<div class="clear"></div>
 		</div>
 		<?php if($page["below_content"]): ?>
 		    <div class="below_content">
 		        <?php print render($page["below_content"]); ?>
-		        <div class="clear"></div>
 		    </div>
 		<?php endif; ?>
 	</div>
