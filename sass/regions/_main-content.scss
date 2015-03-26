@@ -14,7 +14,7 @@
     }
 
   .content > img {
-      background-color: #F9F8F2;
+      background-color: $sand-light;
       margin: 10px;
       padding: 4px;
   }
@@ -32,8 +32,8 @@
     }
 
   .below_content p {
-    background-color:#ece9d8;
-    color:#5d5c5b;
+    background-color: $sand-dark;
+    color: $gray-dark;
     margin:0px;
     border:0px;
     }

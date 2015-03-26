@@ -13,7 +13,7 @@
     margin:0;
     padding:0 10px 0 0;
     overflow:hidden;
-    border-right:1px solid #e5e7de;
+    border-right:1px solid $gray-light;
     }
 
   .site_title { line-height:1.1em; margin-left:12px; margin-top:0px; float:left;}
@@ -31,7 +31,7 @@
     padding:0 0 0 0;
     text-transform:uppercase;
     letter-spacing:-1px;
-    color:#F1B521;
+    color: $gold-dark;
     text-decoration:none;
     }
 

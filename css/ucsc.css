@@ -842,7 +842,7 @@ legend {
 
 .access_links li a:focus,
 .access_links li a:hover {
-  background-color: #007799;
+  background-color: #00458c;
   color: #ffffff;
   left: 0; }
 
@@ -919,7 +919,7 @@ legend {
 */
 .utility_nav li {
   background-image: none;
-  border-left: 1px solid #c2cdc9;
+  border-left: 1px solid #efecdd;
   float: left;
   font-size: 12px;
   line-height: 1.2em;
@@ -933,8 +933,8 @@ legend {
   float: right;
   margin: 20px 0px 36px -12px;
   padding: 0px;
-  background: rgba(255, 255, 255, 0.8);
-  border: solid 1px #d5d3c8;
+  background: #F2F0E4;
+  border: solid 1px #efecdd;
   border-radius: 5px;
   min-width: 220px; }
 
@@ -952,7 +952,7 @@ legend {
   font-weight: bold;
   text-transform: uppercase;
   background-image: none;
-  background-color: #c7c4b7;
+  background-color: #e8e5cf;
   margin: 0px;
   border-radius: 0px;
   cursor: pointer;
@@ -960,20 +960,20 @@ legend {
 
 .search input[type='text'] {
   width: 65%;
-  color: #666;
+  color: #84827c;
   font-size: 12px;
-  color: #A3A3A1;
+  color: #898782;
   background-color: transparent;
   float: left;
   padding: 4px 0 0 6px;
   border: none; }
 
 .search form input {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #8e8c87; }
+  background-color: white;
+  border: 1px solid #84827c; }
 
 .search form input.query {
-  color: #a3a3a1;
+  color: #898782;
   height: 15px;
   line-height: 1em;
   padding: 4px 0 0 0;
@@ -995,7 +995,7 @@ legend {
   margin: 0;
   padding: 0 10px 0 0;
   overflow: hidden;
-  border-right: 1px solid #e5e7de; }
+  border-right: 1px solid #a2a09c; }
 
 .site_title {
   line-height: 1.1em;
@@ -1026,7 +1026,7 @@ legend {
   padding: 0 0 0 0;
   text-transform: uppercase;
   letter-spacing: -1px;
-  color: #F1B521;
+  color: #cc9e00;
   text-decoration: none; }
 
 /**
@@ -1075,7 +1075,7 @@ legend {
   line-height: 1.6em; }
 
 .content > img {
-  background-color: #F9F8F2;
+  background-color: white;
   margin: 10px;
   padding: 4px; }
 
@@ -1090,8 +1090,8 @@ legend {
   min-height: 10px; }
 
 .below_content p {
-  background-color: #ece9d8;
-  color: #5d5c5b;
+  background-color: #e8e5cf;
+  color: #84827c;
   margin: 0px;
   border: 0px; }
 
@@ -1122,13 +1122,13 @@ legend {
 
 .main_nav .menu {
   background: transparent url(../images/button_background.jpeg) repeat-x;
-  background-image: -moz-linear-gradient(top, #f4f1e6, #ffffff);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f1e6), to(#ffffff));
+  background-image: -moz-linear-gradient(top, #efecdd, #ffffff);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#efecdd), to(#ffffff));
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid #E7E5DE;
-  border-bottom: solid 1px #d5d3c8;
+  border: 1px solid #F2F0E4;
+  border-bottom: solid 1px #efecdd;
   clear: both;
   display: block;
   height: 30px;
@@ -1136,7 +1136,7 @@ legend {
 
 .main_nav li {
   border-left: 1px solid #ffffff;
-  border-right: 1px solid #e7e5de;
+  border-right: 1px solid #efecdd;
   float: left;
   font-size: 11px;
   line-height: 16px;
@@ -1151,9 +1151,9 @@ legend {
 .main_nav li a,
 .qsg span {
   background: url(../images/main_nav_off.gif) repeat-x;
-  background-image: -moz-linear-gradient(top, #f4f1e6, #ffffff);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4f1e6), to(#ffffff));
-  color: #cb9001;
+  background-image: -moz-linear-gradient(top, #efecdd, #ffffff);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#efecdd), to(#ffffff));
+  color: #f5bd00;
   cursor: pointer;
   display: block;
   font-weight: bold;
@@ -1171,13 +1171,13 @@ legend {
 .main_nav li a:focus,
 .main_nav li a:hover,
 .main_nav li.qsg span:hover {
-  color: #ffbd15;
+  color: #f5bd00;
   text-decoration: none;
-  background: #296fa3;
-  background-color: #296fa3;
+  background: #00458c;
+  background-color: #00458c;
   background-repeat: repeat-x;
-  background-image: -moz-linear-gradient(top, #296fa3, #5992bd);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#296fa3), to(#5992bd));
+  background-image: -moz-linear-gradient(top, #003b78, #0059b5);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0059b5), to(#003b78));
   background-position: top left;
   -moz-text-shadow: none;
   text-shadow: none; }
@@ -1191,8 +1191,8 @@ legend {
   padding: 0; }
 
 .main_nav li li a {
-  background: #f9f8f2;
-  color: #5585A2;
+  background: white;
+  color: #0059b5;
   height: auto;
   padding: 4px 0 4px 10px;
   text-align: left;
@@ -1228,7 +1228,7 @@ legend {
   position: relative; }
 
 .main_nav li ul {
-  background: #f9f8f2;
+  background: white;
   left: -900em;
   position: absolute;
   padding: 6px 0 0 0;
@@ -1247,9 +1247,9 @@ legend {
 
 .main_nav li li a:focus,
 .main_nav li li a:hover {
-  background: #296fa3;
+  background: #00458c;
   background-image: none;
-  color: #f9f8f2;
+  color: white;
   height: auto; }
 
 /**
@@ -1258,7 +1258,7 @@ legend {
 */
 .messages {
   min-height: 1em;
-  color: #333333;
+  color: #898782;
   background-color: #cde4f2;
   border: 1px solid #82a0c3;
   padding: 1em 1em 1em 2em !important;
@@ -1304,7 +1304,7 @@ legend {
   line-height: 1.2em;
   margin: 0 0 0.2em 18px;
   font-size: 28px;
-  color: #555555;
+  color: #84827c;
   width: 70%; }
 
 #page-header {
@@ -1332,23 +1332,23 @@ legend {
 .content,
 .below_content,
 .right_content .inner {
-  background-color: #ece9d8;
-  color: #5d5c5b;
+  background-color: white;
+  color: #84827c;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   padding: 15px;
   margin: 0px 0px 20px 8px;
-  border-bottom: 1px solid #e5e4de; }
+  border-bottom: 1px solid white; }
 
 .above_content {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   padding: 0px;
-  background-color: #ece9d8;
-  color: #8e8c87;
-  border-bottom: 1px solid #e5e4de;
+  background-color: white;
+  color: #84827c;
+  border-bottom: 1px solid white;
   margin: 0px 0px 10px 8px; }
 
 .above_content .block .content {
@@ -1356,17 +1356,17 @@ legend {
 
 .below_content {
   padding: 10px;
-  color: #8e8c87;
-  border-bottom: 1px solid #e5e4de;
+  color: #898782;
+  border-bottom: 1px solid white;
   margin: 0px 0px 10px 0px; }
 
 .footer {
   letter-spacing: 0.05em;
-  color: #5d5c5b;
+  color: #84827c;
   text-transform: uppercase;
   margin-top: 1em;
   padding-top: 1em;
-  border-top: 1px solid #dedcd1;
+  border-top: 1px solid white;
   font-size: 0.65em; }
 
 .footer a {

@@ -6,14 +6,14 @@
   .content,
   .below_content,
   .right_content .inner {
-    background-color:#ece9d8;
-    color:#5d5c5b;
+    background-color: $sand-light;
+    color: $gray-dark;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
     padding:15px;
     margin:0px 0px 20px 8px;
-    border-bottom:1px solid #e5e4de;
+    border-bottom:1px solid $sand-light;
     }
 
   .above_content {
@@ -21,9 +21,9 @@
     -moz-border-radius:5px;
     border-radius:5px;
     padding:0px;
-    background-color:#ece9d8;
-    color:#8e8c87;
-    border-bottom:1px solid #e5e4de;
+    background-color: $sand-light;
+    color: $gray-dark;
+    border-bottom:1px solid $sand-light;
     margin:0px 0px 10px 8px;
     }
 
@@ -33,18 +33,18 @@
 
   .below_content {
     padding:10px;
-    color:#8e8c87;
-    border-bottom:1px solid #e5e4de;
+    color: $gray-med;
+    border-bottom:1px solid $sand-light;
     margin:0px 0px 10px 0px;
     }
 
   .footer {
     letter-spacing:0.05em;
-    color:#5d5c5b;
+    color: $gray-dark;
     text-transform:uppercase;
     margin-top:1em;
     padding-top:1em;
-    border-top:1px solid #dedcd1;
+    border-top:1px solid $sand-light;
     font-size:0.65em;
     }
 

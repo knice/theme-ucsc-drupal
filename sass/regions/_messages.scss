@@ -5,9 +5,9 @@
 
   .messages {
     min-height:1em;
-    color:#333333;
-    background-color:#cde4f2;
-    border:1px solid #82a0c3;
+    color: $gray-med;
+    background-color: $messages;
+    border:1px solid $messages-border;
     padding:1em 1em 1em 2em !important;
     margin-bottom:30px;
     }
@@ -28,23 +28,23 @@
     }
 
   .messages.help {
-    background:#cde4f2;
-    border:1px solid #82a0c3;
+    background: $messages;
+    border:1px solid $messages-border;
     }
 
   .messages.status {
-    background:#d4efcc;
-    border:1px solid #69c375;
+    background: $messages-status;
+    border:1px solid $messages-status-border;
     }
 
   .messages.warning {
-    background:#f5fc9c;
-    border:1px solid #D4D400;
+    background: $messages-warning;
+    border:1px solid $messages-warning-border;
     }
 
   .messages.error {
-    background:#FCC;
-    border:1px solid #DB6B6C;
+    background: $messages-error;
+    border:1px solid $messages-error-border;
     }
 
   .more-help-link {
