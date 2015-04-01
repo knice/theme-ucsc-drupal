@@ -107,7 +107,7 @@ gulp.task('build', function() {
 //
 // The default task (called when you run `gulp`)
 //
-gulp.task('default', ['styles', 'webserver'], function () {
+gulp.task('default', ['styles'], function () {
     gulp.watch('sass/**/*.scss', ['styles']);
     // gulp.watch('app/src/images/**/.**', ['images']);
 });
