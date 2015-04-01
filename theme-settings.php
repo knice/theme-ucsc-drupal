@@ -7,8 +7,8 @@ function ucsc_form_system_theme_settings_alter(&$form, &$form_state) {
 
   $form["ucsc"] = array(
     "#type" => "fieldset",
-    "#title" => "ucsc Settings",
-    "#description" => "<p>These settings control the appearance and functionality of the ucsc theme.</p>",
+    "#title" => "UCSC Settings",
+    "#description" => "<p>These settings control the appearance and functionality of the UCSC theme.</p>",
   );
 
     $form["ucsc"]["ucsc_frontpage_template"] = array(
