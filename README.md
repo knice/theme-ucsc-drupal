@@ -4,32 +4,43 @@ This theme is in development. Breaking changes may occur frequently.
 
 A responsive re-write of the campus Drupal theme.
 
-## 1. Installation
-
-### As a normal Drupal theme
+## Use as a normal Drupal theme
 
 - Download the [latest development release](https://github.com/knice/ucsc-drupal/releases).
 - Upzip the theme in your `sites/(all OR default)/themes/` directory.
 
-### For development
+****
 
-- Clone this repository into the `sites/(all OR default)/themes/` directory of your Drupal installation.  
+## Installing for development
 
-### For development, the nerdy way
+### 1. Setup your Drupal environment 
 
-Add it as a git submodule in your git-maintained Drupal installation.  
+Setting up for development takes some time, but it is worth it.
 
-- cd into your `sites/(all OR default)/themes/` directory.
-- `git submodule add git@github.com:knice/ucsc-drupal.git ucsc`
+- [Follow these instructions](https://www.drupal.org/node/2008792) to install Vagrant Drupal Development (it will also walk you through installation of Vagrant and VirtualBox).
+- Continue to follow the instructions to setup Drupal 7 with Drush.
+- A couple of helpful development modules are Devel and Styleguide. Install them with drush using:
+    + `drush @drupal7 dl devel`
+    + `drush @drupal7 dl styleguide`
 
+### 2. Install the theme
 
-## 2. Compiling sass to css
+Use `drush` to manage your Drupal installation and `git` to manage this theme.
+
+- Clone this repository into the `sites/(all OR default)/themes/` directory of your Drupal installation with:
+`git clone git@github.com:knice/ucsc-drupal.git`
+
+### 3. Compiling sass to css
+
+For basic sass --> css development, follow the directions below.
 
 - Install [sass](http://sass-lang.com/install) >= v3.4.13.
 - From the theme directory, use the following command:
 `sass sass/ucsc.scss:css/ucsc.css --watch`
 
-## 2a. Using Gulp
+### 3a. Using Gulp (optional)
+
+For managing additional assets (svg images, icon systems, images, scripts), you'll need to install Node so you can compile these assets with Gulp.
 
 - Install [Homebrew](http://brew.sh)
 - Install the Ruby version manager rbenv with:
@@ -41,4 +52,6 @@ Add it as a git submodule in your git-maintained Drupal installation.
   - `rbenv rehash`
   - then `rbenv global 2.2.0`
   - Now `ruby -v` should return "2.2.0"
-- Install Sass, [Bourbon](http://bourbon.io), and [Neat](http://neat.bourbon.io) with `gem install sass bourbon neat` 
+- Install Sass, [Bourbon](http://bourbon.io), and [Neat](http://neat.bourbon.io) with `gem install sass bourbon neat`
+
+Now you can simply run `gulp` in the theme directory and stylesheets will automatically compile.
