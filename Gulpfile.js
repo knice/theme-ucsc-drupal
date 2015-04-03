@@ -8,8 +8,7 @@ var pkg = require('./package.json'),
     clean = require('gulp-clean'),    
     imagemin = require('gulp-imagemin'),    
     zip = require('gulp-zip'),
-    svgo = require('imagemin-svgo'),    
-    browserSync = require('browser-sync');
+    svgo = require('imagemin-svgo');
 
 //
 // Set default file path variables for tasks
@@ -19,19 +18,6 @@ var paths = {
     images: './images/**/**'
 };
 
-//
-// Static webserver with livereload via connect
-//
-gulp.task('webserver', function() {
-    browserSync.init("./index.php", {
-        server: {
-            baseDir: "./"            
-        },
-        watchOptions: {
-            debounceDelay: 3000
-        }
-    });
-});
 
 //
 // Clean the build folder so we start clean
@@ -64,20 +50,20 @@ gulp.task('styles', function() {
 
 
 //
-// Optimize and copy images into the build folder.
+// Implement later: Optimize and copy images into the build folder.
 //
 // gulp.task('images', function() {
 //     return gulp.src(paths.images)
-//         .pipe(changed('./app/src/jekyll/images/'))
+//         .pipe(changed('./images/'))
 //         .pipe(imagemin({
 //             optimizationLevel: 5
 //         }))
-//         .pipe(gulp.dest('./app/src/jekyll/images/'));
+//         .pipe(gulp.dest('./src/images/'));
 // });
 
 
 //
-// Optimize svg and make sprites in the build folder.
+// Implement later: Optimize svg and make sprites in the build folder.
 //
 // gulp.task('svg', function() {
 //     return gulp.src(paths.svg)
@@ -88,20 +74,19 @@ gulp.task('styles', function() {
 
 
 //
-// Create zip archive of static file assets
+// Implement later: Create zip archive of static file assets
 //
-gulp.task('build', function() {
-    return gulp.src([
-            './app/src/jekyll/css/**.**',
-            './app/src/jekyll/images/**/**.**',
-            './app/src/jekyll/js/**.**',
-            './app/src/jekyll/lib/**/**.**'
-        ], {
-            base: "./app/src/jekyll"
-        })
-        .pipe(zip('_responsive.zip'))
-        .pipe(gulp.dest('./static'));
-});
+// gulp.task('build', function() {
+//     return gulp.src([
+//             './css/**.**',
+//             './images/**/**.**',
+//             './js/**.**'
+//         ], {
+//             base: "./"
+//         })
+//         .pipe(zip('ucsc.zip'))
+//         .pipe(gulp.dest('./'));
+// });
 
 
 //
@@ -114,9 +99,9 @@ gulp.task('default', ['styles'], function () {
 
 
 //
-// The fresh task: compiles everything so we can zip it up for Cascade with 'gulp build'.
+// The fresh task: compiles everything so we can zip it up with 'gulp build'.
 //
-gulp.task('fresh', ['clean', 'bower-files', 'styles', 'scripts', 'images']);
+gulp.task('fresh', ['clean', 'styles']);
 
 
 
