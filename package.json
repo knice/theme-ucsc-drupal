@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fetch": "node app.js"
+    "fetch": "node app.js",
+    "postinstall": "sh npm_post.sh"
   },
   "author": "Rob Knight",
   "license": "BSD-2-Clause",
