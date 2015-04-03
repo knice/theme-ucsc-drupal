@@ -4,7 +4,6 @@ version = 3.0.3
 core = 7.x
 engine = phptemplate
 
-stylesheets[all][] = css/960_12_fluid.css
 stylesheets[all][] = css/ucsc.css
 
 scripts[] = base64.js
