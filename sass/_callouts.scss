@@ -1,37 +1,72 @@
- .callout-right blockquote,
-  .callout-left blockquote {
-    margin:14px;
-    padding:0;
-    border:none;
-    }
+.callout-right blockquote,
+.callout-left blockquote {
+  margin: 1em;
+  padding:0;
+  border:none;
+}
 
-  .callout-right blockquote,
-  .callout-left blockquote { margin:14px; padding:0; border:none; }
+.callout-right blockquote,
+.callout-left blockquote { 
+  margin: 1em;
+  padding:0;
+  border:none;
+}
 
-  .callout-full,
-  .callout-left,
-  .callout-right { background-color: $sand-light;border-bottom:1px solid $gray-dark;display:table;padding:8px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px; }
+.callout-full,
+.callout-left,
+.callout-right {
+  background-color: $sand-light;
+  border-bottom: 1px solid $gray-dark;
+  display: table;
+  padding: 0.5em;
+  border-radius: $border-radius-base;
+}
 
-  .callout-left,
-  .callout-right { width: 225px; }
+.callout-left,
+.callout-right { 
+  width: 30%;
+}
 
-  .callout-full { width:98%; margin:10px auto; }
+.callout-full { 
+  width: 100%;
+  margin: 0 auto;
+}
 
-  .callout-right,
-  .right { float:right;margin:0 0 10px 14px; }
+.callout-right,
+.right { 
+  float:right;
+  margin: 0 0 0.8em 1em;
+}
 
-  .callout-left { float:left;margin:0 14px 10px 0; }
+.callout-left {
+  float:left;
+  margin: 0 1em 0.8em 0;
+}
 
-  .callout-left img,
-  .callout-right img { margin:0; padding:0; }
+.callout-left img,
+.callout-right img {
+  margin:0; 
+  padding:0;
+}
 
-  .callout-full h3,
-  .callout-left h3,
-  .callout-right h3 { margin:0; }
+.callout-full h3,
+.callout-left h3,
+.callout-right h3 { margin:0; }
 
-  .callout-full h4,
-  .callout-left h4,
-  .callout-right h4 { margin:0; border-bottom:1px solid $sand-dark; background-color: $sand-light; -moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px; }
+.callout-full h4,
+.callout-left h4,
+.callout-right h4 { 
+  margin:0;
+  border-bottom:1px solid $sand-dark;
+  background-color: $sand-light;
+  border-radius: $border-radius-base; }
 
-  .callout-left textarea,
-  .callout-right textarea { font-family:Monaco;border:1px solid $gray-light;width:70%;height:80px;padding:4px;overflow:hidden;font-size:10px; }
+.callout-left textarea,
+.callout-right textarea {
+  font-family: $font-family-monospace;
+  border: 1px solid $gray-light;
+  width: 70%;
+  height: 5em;
+  padding: 0.25em;
+  overflow: hidden;
+}

@@ -1,16 +1,15 @@
 /*
 * = CSS3 column styles
 */
-.columns-2 { padding:10px;
-   background-color: $sand-light;
-   border-bottom:1px solid $gray-dark;padding:14px;
-   -webkit-border-radius:4px;
-   -moz-column-count:2;
-   -webkit-column-count:2;
-   -moz-column-gap:1em;
-   -webkit-column-gap:1em;
-  }
+.columns-2 {
+  background-color: $sand-light;
+  border-bottom: 1px solid $gray-dark;
+  padding: 0.8em;
+  border-radius: $border-radius-base;
+  column-count: 2;
+  column-gap: 1em;
+}
 
 .columns-2 :first-child {
-   margin-top:0;
-    }
+  margin-top: 0;
+}
