@@ -9,9 +9,8 @@
     background-image:none;
   }
 
-  ul > li,
-  ul li ul li,
-  ul.menu li {
+  ul li,
+  li li {
     background:url(../images/bullet.gif) no-repeat left 5px;
     list-style:none;
     padding:0px 0px 0px 15px;

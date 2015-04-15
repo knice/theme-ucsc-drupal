@@ -1,9 +1,7 @@
 /**
 * Main navigation
 */
-  .main_nav { margin-top:14px; }
 
-  .main_nav.grid_12 { margin-left: 0;}
 
   /* Override some defaults from above and from system.css */
   .main_nav .block .content,
@@ -11,109 +9,93 @@
   .main_nav .block ul { padding:0; }
 
   .main_nav .menu {
-    background:transparent url(../images/button_background.jpeg) repeat-x;
-    background-image:-moz-linear-gradient(top, $sand-med,#ffffff);
-    background-image:-webkit-gradient(linear,0% 0%,0% 100%,from($sand-med),to(#ffffff));
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
-    border:1px solid $sand;
-    border-bottom:solid 1px $sand-med;
-    clear:both;
-    display:block;
-    height:30px;
-    margin:0px 0 10px 0;
-    }
+    border-radius: $border-radius-base;
+    display: table;
+    margin: 0;
+    width: 100%;
+  }
 
   .main_nav li {
-    border-left:1px solid #ffffff;
-    border-right:1px solid  $sand-med;
-    float:left;
-    font-size:11px;
-    line-height:16px;
-    list-style:none;
-    margin:0;
-    padding:0px 0px;
-    text-align:center;
-    width:130px;
-    background-image:none;
-    background-color:transparent;
-    }
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid  $sand-med;
+    display: table-cell;
+    vertical-align: middle;
+    list-style: none;
+    list-style-image: none;    
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: auto;
+  }
 
-  .main_nav li a,
-  .qsg span {
-    background:url(../images/main_nav_off.gif) repeat-x;
-    background-image:-moz-linear-gradient(top, $sand-med,#ffffff);
-    background-image:-webkit-gradient(linear,0% 0%,0% 100%,from($sand-med),to(#ffffff));
+  .main_nav li a {
+    background-color: $sand-light;
     color: $gold-med;
-    cursor:pointer;
-    display:block;
-    font-weight:bold;
-    font-size:11px;
-    height:15px;
+    cursor: pointer;
+    display: block;
     letter-spacing:normal;
-    padding:8px 0 7px 0;
+    padding:0.8em;
+    line-height: 1.3;
     text-transform:uppercase;
     text-decoration:none;
-    -moz-text-shadow:1px 1px 0px #ffffff;
-    text-shadow:1px 1px 0px #ffffff;
     width:100%;
-    }
+  }
 
   .main_nav .menu.hovered,
   .main_nav li a:focus,
   .main_nav li a:hover,
   .main_nav li.qsg span:hover {
     color: $gold-med;
-    text-decoration:none;
+    text-decoration: none;
     background: $blue;
     background-color: $blue;
-    background-repeat:repeat-x;
-    background-image:-moz-linear-gradient(top, $blue-dark, $blue-light);
-    background-image:-webkit-gradient(linear,0% 0%,0% 100%,from($blue-light),to($blue-dark));
-    background-position:top left;
-    -moz-text-shadow:none;
-    text-shadow:none;
-    }
+  }
 
   .main_nav li li {
     background:none;
     border:none;
     float:none;
+    display: block;
     margin:0;
-    min-width:190px;
+    min-width: 14em;
+    max-width: 14em;
     padding:0;
     }
 
   .main_nav li li a {
     background: $sand-light;
     color: $blue-light;
-    height:auto;
-    padding:4px 0 4px 10px;
-    text-align:left;
-    text-shadow:none;
+    height: auto;
+    padding: 0.5em;
+    text-align: left;
     text-transform:none;
+    border-bottom: 1px solid $sand-med;
+    :last-child & {
+      border-bottom: none;
+    }
+  }
+
+  .main_nav li:first-child a {
+    border-top-left-radius: $border-radius-base;
+    border-bottom-left-radius: $border-radius-base;
     }
 
-  .main_nav .first a,
-  .main_nav li:first-child a {
-    -webkit-border-top-left-radius:5px;
-    -webkit-border-bottom-left-radius:5px;
-    -moz-border-radius-topleft:5px;
-    -moz-border-radius-bottomleft:5px;
-    border-top-left-radius:5px;
-    border-bottom-left-radius:5px;
-    }
+  .main_nav li:last-child a {
+    border-top-right-radius: $border-radius-base;
+    border-bottom-right-radius: $border-radius-base;
+    }  
 
   /* No :first-child rounded corners for nested <li>s */
-  .main_nav li li a {
-    -webkit-border-top-left-radius:0px !important;
-    -webkit-border-bottom-left-radius:0px !important;
-    -moz-border-radius-topleft:0px !important;
-    -moz-border-radius-bottomleft:0px !important;
-    border-top-left-radius:0px !important;
-    border-bottom-left-radius:0px !important;
-    }
+  .main_nav li li:first-child a {
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+  }
+
+  .main_nav li li:last-child a {
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+  }
+
 
   .main_nav ul > li:first-child { border-left:none; }
   .main_nav ul > li:last-child { border-right:none; }
@@ -124,23 +106,21 @@
     position:relative;
     }
 
-  .main_nav li ul {
+  .main_nav li .menu {
     background: $sand-light;
+    border-top:1px solid $sand-med;
     left:-900em;
     position:absolute;
-    padding:6px 0 0 0;
-    /* Remove box shadows for now. -rk
-    -webkit-box-shadow:4px 4px 4px rgba(0,0,0,0.2);
-    -moz-box-shadow:4px 4px 4px rgba(0,0,0,0.2);
-    box-shadow:4px 4px 4px rgba(0,0,0,0.2);
-    */
+    padding:0;
+    box-shadow:4px 4px 8px rgba(0,0,0,0.3);
     z-index:100;
+    width: 14em;
+    border-radius: 0px;
     }
 
   .main_nav li:hover ul,
   .main_nav li.hov ul {
     left:auto;
-    *left:0px;
     z-index:100;
     }
 
@@ -148,6 +128,6 @@
     .main_nav li li a:hover {
     background: $blue;
     background-image:none;
-    color: $sand-light;
+    color: $gold;
     height:auto;
-    }
+  }
