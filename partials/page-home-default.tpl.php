@@ -7,8 +7,8 @@
 	</div>
 <?php endif; ?>
 
-<div class="row grid_12">
-	<div class="three_column">
+
+	<div class="row grid_12 three_column">
 		<div class="grid_4 alpha three_column_one">
 			<?php print render($page["three_column_one"]); ?>
 		</div>

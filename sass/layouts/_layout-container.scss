@@ -16,6 +16,7 @@
 
 .row {
   @include row;
+  margin: 0 0 1.5em;
 }
 
 .content,
