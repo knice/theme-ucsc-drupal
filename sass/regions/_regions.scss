@@ -8,12 +8,9 @@
   .right_content .inner {
     background-color: $sand-light;
     color: $gray-dark;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
-    padding:15px;
-    margin:0px 0px 20px 8px;
-    border-bottom:1px solid $sand-light;
+    border-radius: $border-radius-base;
+    padding: 1em;
+    margin: 0;
     }
 
   .above_content {
@@ -41,11 +38,11 @@
   .footer {
     letter-spacing:0.05em;
     color: $gray-dark;
-    text-transform:uppercase;
+    text-transform: none;
     margin-top:1em;
     padding-top:1em;
-    border-top:1px solid $sand-light;
-    font-size:0.65em;
+    border-top:1px solid $sand-dark;
+    font-size:0.75em;
     }
 
   .front .three_column .block .content {
