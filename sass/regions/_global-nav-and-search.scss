@@ -41,51 +41,23 @@
 
 #block-search-form input[type="text"] {
     width: 100%;
-    padding: 6.33333px 4px;
+    padding: 0.4em 0.5em 0.3em;
 }
 
 .search h4,
-.search label {
+.search label,
+.search input[type='submit'] {
+  display: block;
   position: absolute;
   right: 900em;
 }
-/*
-.search input[type='submit'] {
-  float: right;
-  border: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-image: none;
-  background-color: $sand-dark;
-  margin: 0px;
-  border-radius: 0px;
-  cursor: pointer;
-  padding:0.5em;
-}
-*/
-.search input[type='submit'] {
-  display: none;
-}
 
 .search input[type='text'] {
+  border: 1px solid $gray-dark;
   width: 65%;
   color: $gray-dark;
   background-color: transparent;
   float: left;
   padding: 4px 0 0 6px;
   border: none;
-}
-
-.search form input {
-  background-color: $sand-light;
-  border: 1px solid $gray-dark;
-}
-
-.search form input.query {
-  color: $gray-med;
-  height: 15px;
-  line-height: 1em;
-  padding: 4px 0 0 0;
-  vertical-align: top;
-  width: 152px;
 }
