@@ -26,7 +26,7 @@
   min-width: 220px;
 }
 
-.search .content {
+.block-search .content {
   padding: 0;
 }
 
@@ -35,7 +35,7 @@
   position: absolute;
   right: 900em;
 }
-
+/*
 .search input[type='submit'] {
   float: right;
   border: none;
@@ -47,6 +47,10 @@
   border-radius: 0px;
   cursor: pointer;
   padding:0.5em;
+}
+*/
+.search input[type='submit'] {
+  display: none;
 }
 
 .search input[type='text'] {
