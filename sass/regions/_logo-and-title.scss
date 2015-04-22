@@ -14,9 +14,15 @@
     padding:0 10px 0 0;
     overflow:hidden;
     border-right:1px solid $gray-light;
-    }
+  }
 
-  .site_title { line-height:1.1em; margin-left:12px; margin-top:0px; float:left;}
+  .site_title { 
+    line-height:1.1em;
+    margin-left: 12px;
+    margin-top:0px;
+    float:left;
+  }
+  
   .site_title.title_standard { margin-top:2px; }
   .site_title.title_short,
   .site_title.title_medium { margin-top:4px; }
@@ -26,13 +32,14 @@
   .site_title.title_super_long { margin-top:-6px; }
 
   .site_title a {
-    margin:0;
-    padding:0 0 0 0;
-    text-transform:uppercase;
-    letter-spacing:-1px;
-    color: $gold-dark;
+    margin: 0;
+    padding: 0 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: $gold-med;
+    font-weight: 400;
     text-decoration:none;
-    }
+  }
 
   /**
   *   Page title classes for titles of different lengths

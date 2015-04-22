@@ -62,7 +62,7 @@ if ($ucsc_fixed_width) {
 <div class="container_12">
 
   <div class="row">
-    	<div class="grid_9 omega">
+    	<div class="grid_9 alpha">
     		<ul class="utility_nav">
     			<li class="home"><a href="http://www.ucsc.edu">University Home</a></li>
     			<li><a href="http://my.ucsc.edu" title="Go to the MyUCSC portal">MyUCSC</a></li>

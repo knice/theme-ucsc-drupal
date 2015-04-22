@@ -10,30 +10,25 @@
     color: $gray-dark;
     border-radius: $border-radius-base;
     padding: 1em;
-    margin: 0;
-    }
+  }
 
   .above_content {
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
-    padding:0px;
+    border-radius: $border-radius-base;
+    padding: 0;
     background-color: $sand-light;
     color: $gray-dark;
-    border-bottom:1px solid $sand-light;
-    margin:0px 0px 10px 8px;
-    }
+    border-bottom: 1px solid $sand-light;
+  }
 
   .above_content .block .content {
     overflow:hidden;
-    }
+  }
 
   .below_content {
     padding:10px;
     color: $gray-med;
     border-bottom:1px solid $sand-light;
-    margin:0px 0px 10px 0px;
-    }
+  }
 
   .footer {
     letter-spacing:0.05em;
