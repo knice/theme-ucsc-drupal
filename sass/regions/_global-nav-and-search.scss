@@ -26,8 +26,13 @@
   min-width: 220px;
 }
 
-.block-search .content {
+#block-search-form .content {
   padding: 0;
+}
+
+#block-search-form input[type="text"] {
+    width: 100%;
+    padding: 6.33333px 4px;
 }
 
 .search h4,
