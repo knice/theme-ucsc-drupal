@@ -30,7 +30,7 @@
 
   .main_nav li a {
     background-color: $sand-light;
-    color: $gold-med;
+    color:$ucsc-gold;;
     cursor: pointer;
     display: block;
     letter-spacing:normal;
@@ -45,7 +45,7 @@
   .main_nav li a:focus,
   .main_nav li a:hover,
   .main_nav li.qsg span:hover {
-    color: $gold-med;
+    color: $gold-light;
     text-decoration: none;
     background: $blue;
     background-color: $blue;
