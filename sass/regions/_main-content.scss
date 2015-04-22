@@ -7,22 +7,10 @@
     clear: both;
   }
 
-  .content p {
-    margin:0px 0px 1em 0px;
-    line-height:1.6em;
-    }
-
   .content > img {
       background-color: $sand-light;
       margin: 10px;
       padding: 4px;
-  }
-
-  .content ul,
-  .content ol {
-    font-size: 12px;
-    line-height: 19px;
-    margin-bottom: 10px;
   }
 
   .left_content .block .content,
@@ -42,9 +30,6 @@
     padding:0;
     border:none;
     }
-
-
-
 
 .content div.indentation {
   clear:none;
