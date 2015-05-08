@@ -69,7 +69,7 @@
 
   .left_content ul .active {
     display:block;
-    background: $sand-light url(../images/navigation-arrow.gif) no-repeat right center;
+    background: $sand-dark url(../images/navigation-arrow.gif) no-repeat right center;
     }
 
   .left_content .menu li a {
@@ -81,5 +81,5 @@
     }
 
   .left_content li a:focus,
-  .left_content li a:hover { background-color: $sand-light; }
+  .left_content li a:hover { background-color: $sand-dark; }
   .left_content ul li .last { border-bottom:none; }
