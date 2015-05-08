@@ -30,7 +30,7 @@
   .left_content .menu {
     margin:0;
     padding:0;
-    border-top: $sand-light 1px solid;
+    border-top: $sand-dark 1px solid;
     line-height:30px;
     width:188px;
     }
@@ -38,7 +38,7 @@
   .left_content .menu li {
     margin:0;
     padding:0;
-    border-bottom: $sand-light 1px solid;
+    border-bottom: $sand-dark 1px solid;
     background-image:none;
     list-style:none;
     }
@@ -83,3 +83,9 @@
   .left_content li a:focus,
   .left_content li a:hover { background-color: $sand-dark; }
   .left_content ul li .last { border-bottom:none; }
+
+  /* overriding system css behavior for active links */
+
+  li a.active {
+    color: $blue-dark;
+}
