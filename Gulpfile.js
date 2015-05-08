@@ -111,7 +111,7 @@ gulp.task('build', ['clean', 'styles', 'readme'], function() {
             './*.info',
             './*.md'
         ], {
-            base: "./"
+            base: "./ucsc"
         })
         .pipe(zip('ucsc.zip'))
         .pipe(gulp.dest('./build'));
