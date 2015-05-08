@@ -28,7 +28,7 @@ if ($block->subject) {
 
 ?>
 
-	<div class="content">
+	<div class="block-content">
 		<?php print $content; ?>
 	</div>
 
