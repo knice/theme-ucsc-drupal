@@ -6,9 +6,16 @@ var pkg = require('./package.json'),
     concat = require('gulp-concat'),
     minifycss = require('gulp-minify-css'),
     clean = require('gulp-clean'),    
+    rename = require('gulp-rename'),    
     imagemin = require('gulp-imagemin'),    
     zip = require('gulp-zip'),
+    bump = require('gulp-bump'),
+    markdown = require('gulp-markdown'),
     svgo = require('imagemin-svgo');
+var s3 = require('gulp-s3-upload')({
+        accessKeyId: process.env.S3_ACCESS_KEY_ID,
+        secretAccessKey: process.env.S3_SECRET_KEY
+    });    
 
 //
 // Set default file path variables for tasks
@@ -24,7 +31,8 @@ var paths = {
 //
 gulp.task('clean', function() {
     gulp.src([
-        'css'
+        './css/**',
+        './build/**'
         ], {
         read: false
     })
@@ -72,21 +80,53 @@ gulp.task('styles', function() {
 //         .pipe(gulp.dest('./app/src/sass/base'));
 // });
 
+gulp.task('readme', function () {
+    return gulp.src('./README.md')
+        .pipe(markdown())
+        .pipe(rename('index.html'))
+        .pipe(gulp.dest('./build/'));
+});
+
+//
+// Defined method of updating: 
+// 
+gulp.task('bump', function(){
+  gulp.src('./package.json')
+  .pipe(bump({type:'minor'}))
+  .pipe(gulp.dest('./'));
+});
+
 
 //
 // Implement later: Create zip archive of static file assets
 //
-// gulp.task('build', function() {
-//     return gulp.src([
-//             './css/**.**',
-//             './images/**/**.**',
-//             './js/**.**'
-//         ], {
-//             base: "./"
-//         })
-//         .pipe(zip('ucsc.zip'))
-//         .pipe(gulp.dest('./'));
-// });
+gulp.task('build', ['clean', 'styles', 'readme'], function() {
+    return gulp.src([
+            './css/**.**',
+            './images/**/**.**',
+            './partials/**',
+            './base64.js',
+            './*.php',
+            './*.png',
+            './*.info',
+            './*.md'
+        ], {
+            base: "./"
+        })
+        .pipe(zip('ucsc.zip'))
+        .pipe(gulp.dest('./build'));
+});
+
+
+
+gulp.task('upload', ['build'], function() {
+    gulp.src("./build/**")
+        .pipe(s3({
+            Bucket: process.env.S3_UCSC_DRUPAL, //  Required 
+            ACL:    'public-read' //  Needs to be user-defined 
+        }));
+});
+
 
 
 //
@@ -104,4 +144,8 @@ gulp.task('default', ['styles'], function () {
 gulp.task('fresh', ['clean', 'styles']);
 
 
-
+//
+// Cleans the CSS and build directories, runs the styles and build tasks,
+// then uploads the zipped theme to S3.
+//
+gulp.task('deploy', ['build', 'upload']);
