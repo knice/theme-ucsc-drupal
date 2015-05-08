@@ -6,7 +6,8 @@ A responsive re-write of the campus Drupal theme.
 
 ## Use as a normal Drupal theme
 
-- Download the [latest development release](https://github.com/knice/ucsc-drupal/releases).
+- Developers/Testers: Download the [latest build](http://ucsc-drupal.s3-website-us-east-1.amazonaws.com/ucsc.zip).
+- End-users: the [latest development release](https://github.com/knice/ucsc-drupal/releases).
 - Upzip the theme in your `sites/(all OR default)/themes/` directory.
 
 ****
