@@ -75,13 +75,13 @@ if ($ucsc_fixed_width) {
     	<div class="grid_3 omega search">
           <?php print render($page["search"]); ?>
     	</div>
-  </div>    
+  </div>
 
- 
+
 
     	<div class="row grid_12">
 
-	    	<a href="http://www.ucsc.edu" title="Go to UCSC homepage" class="logo">UC Santa Cruz home</a>
+	    	<a href="http://www.ucsc.edu" title="Go to UCSC homepage" class="logo"><?php require_once("partials/ucsc-logotype.svg"); ?></a>
 
 	    	  <?php
 

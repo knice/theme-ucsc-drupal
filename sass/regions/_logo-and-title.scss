@@ -3,26 +3,21 @@
 */
   .logo {
     display:block;
-    background:url(../images/logo.gif) no-repeat top left;
-    height:45px;
-    width:144px;
-    text-indent:-9999px;
-    font-size:1px;
-    line-height:1px;
+    height:60px;
+    width:220px;
     float:left;
     margin:0;
-    padding:0 10px 0 0;
+    padding:0 1em 0 0;
     overflow:hidden;
-    border-right:1px solid $gray-light;
   }
 
-  .site_title { 
+  .site_title {
     line-height:1.1em;
     margin-left: 12px;
     margin-top:0px;
     float:left;
   }
-  
+
   .site_title.title_standard { margin-top:2px; }
   .site_title.title_short,
   .site_title.title_medium { margin-top:4px; }
