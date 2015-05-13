@@ -1,0 +1,12 @@
+// ## Calculate rems from pixels
+//
+// Function and mixin to return rem units from px.
+@function calculateRem($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: #{$size}px; // Fallback in px
+  font-size: calculateRem($size);
+}
