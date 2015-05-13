@@ -30,15 +30,14 @@
   .left_content .menu {
     margin:0;
     padding:0;
-    border-top: $sand-dark 1px solid;
+    border-top: 1px solid lighten($gray-light, 24%);
     line-height:30px;
-    width:188px;
     }
 
   .left_content .menu li {
     margin:0;
     padding:0;
-    border-bottom: $sand-dark 1px solid;
+    border-bottom: 1px solid lighten($gray-light, 24%);
     background-image:none;
     list-style:none;
     }
@@ -51,38 +50,36 @@
     background:transparent url(../images/bullet.gif) no-repeat 12px 10px;
     padding-left: 1.6em;
     margin-left: 0;
-    width: 87%;
     }
 
   .left_content .menu li li a {
     margin-left:0px;
     padding-left:12px;
-    width:94%;
     }
 
   .left_content .menu li li li a {
     padding-left:0.4em;
-    width:100%;
     line-height:1em;
     background-image:none;
     }
 
   .left_content ul .active {
     display:block;
-    background: $sand-dark url(../images/navigation-arrow.gif) no-repeat right center;
+    background: $sand-dark url(../images/navigation-arrow.gif) no-repeat 98% center;
+    border-bottom: 1px solid lighten($gray-light, 24%);
     }
 
   .left_content .menu li a {
     display:block;
     width:100%;
-    max-width:184px;
     line-height:1.4em;
-    padding:6px 0px;
+    padding:6px 0px 6px 10px
     }
 
   .left_content li a:focus,
-  .left_content li a:hover { background-color: $sand-dark; }
-  .left_content ul li .last { border-bottom:none; }
+  .left_content li a:hover { 
+    background-color: $sand-dark; 
+    }
 
   /* overriding system css behavior for active links */
 

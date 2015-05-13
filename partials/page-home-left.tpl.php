@@ -29,7 +29,7 @@
 	</div>
 
 	<?php if ($page["sidebar_first"]) { ?>
-	<div class="grid_3 pull_9 left_content">
+	<div class="grid_3 pull_9 left_content alpha">
 		<?php print render($page["sidebar_first"]); ?>
 	</div>
 	<?php } ?>
