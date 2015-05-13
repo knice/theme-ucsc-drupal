@@ -53,10 +53,10 @@
 }
 
 .search input[type='text'] {
-  border: 1px solid $gray-dark;
+  border-radius: 5px;
   width: 65%;
-  color: $gray-dark;
-  background-color: transparent;
+  color: darken($gray-dark, 34%);
+  background-color: #fff;
   float: left;
   padding: 4px 0 0 6px;
   border: none;
