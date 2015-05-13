@@ -5,17 +5,17 @@ var pkg = require('./package.json'),
     sass = require('gulp-ruby-sass'),
     concat = require('gulp-concat'),
     minifycss = require('gulp-minify-css'),
-    clean = require('gulp-clean'),    
-    rename = require('gulp-rename'),    
-    imagemin = require('gulp-imagemin'),    
+    clean = require('gulp-clean'),
+    rename = require('gulp-rename'),
+    imagemin = require('gulp-imagemin'),
     zip = require('gulp-zip'),
     bump = require('gulp-bump'),
     markdown = require('gulp-markdown'),
     svgo = require('imagemin-svgo');
-var s3 = require('gulp-s3-upload')({
-        accessKeyId: process.env.S3_ACCESS_KEY_ID,
-        secretAccessKey: process.env.S3_SECRET_KEY
-    });    
+// var s3 = require('gulp-s3-upload')({
+//         accessKeyId: process.env.S3_ACCESS_KEY_ID,
+//         secretAccessKey: process.env.S3_SECRET_KEY
+//     });
 
 //
 // Set default file path variables for tasks
@@ -88,8 +88,8 @@ gulp.task('readme', function () {
 });
 
 //
-// Defined method of updating: 
-// 
+// Defined method of updating:
+//
 gulp.task('bump', function(){
   gulp.src('./package.json')
   .pipe(bump({type:'minor'}))
@@ -119,11 +119,11 @@ gulp.task('build', ['clean', 'styles', 'readme'], function() {
 
 
 
-gulp.task('upload', ['build'], function() {
+gulp.task('upload', function() {
     gulp.src("./build/**")
         .pipe(s3({
-            Bucket: process.env.S3_UCSC_DRUPAL, //  Required 
-            ACL:    'public-read' //  Needs to be user-defined 
+            Bucket: process.env.S3_UCSC_DRUPAL, //  Required
+            ACL:    'public-read' //  Needs to be user-defined
         }));
 });
 
