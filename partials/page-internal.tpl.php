@@ -2,20 +2,21 @@
 <!-- Internal page template -->
 
 	<?php if ($breadcrumb != ""): ?>
-	<div class="breadcrumbs" class="row grid_12">
+	<div class="row grid_12 breadcrumbs">
 	<?php print render($breadcrumb); ?>
 	</div>
 	<?php endif; ?>
 
 
 	<?php if ($page["sidebar_first"]) { ?>
+		<div class="row">
 		 <div class="grid_9 push_3">
 	<?php } else { ?>
 		<div class="row grid_12">
 	<?php } ?>
 
 		<h1 class="page_title"><?php print $title; ?></h1>
-	
+
 	<?php if($page["above_content"]): ?>
 	  <div class="above_content" class="grid_12">
 	    <?php print render($page["above_content"]); ?>
@@ -41,7 +42,8 @@
 	</div>
 
 	<?php if ($page["sidebar_first"]) { ?>
-	<div class="grid_3 pull_9 left_content alpha">
-		<?php print render($page["sidebar_first"]); ?>
+		<div class="grid_3 pull_9 left_content alpha">
+			<?php print render($page["sidebar_first"]); ?>
+		</div>
 	</div>
 	<?php } ?>
