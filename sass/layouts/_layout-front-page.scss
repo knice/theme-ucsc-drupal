@@ -48,25 +48,27 @@
     }
 
   .four_column .block-title {
-    color: $brown-dark;
-    margin:0 0 10px 0;
-    text-transform:uppercase;
-    line-height: 1.4em;
+    margin: 0 0 1em 0;
+    color: $brown;
+    text-transform: uppercase;
+    font-size: $font-size-base;
+    font-weight: normal;
     }
 
     .three_column .block-title span,
     .four_column .block-title span {
       font-style:normal;
-      font-weight:bold;
-      color: $brown dark;
+      font-weight: bold;
+      color: $brown-light;
     }
 
   .three_column .block-title {
-    margin:0px 0px 10px 0px;
-    padding:6px;
-    border:1px solid $sand-med;
-    color: $gray-dark;
-    font-weight:normal;
+    margin: 0 0 10px 0;
+    padding: 4px 6px;
+    border: 1px solid lighten($brown-light, 44%);
+    color: lighten($brown-light, 12%);
+    font-size: $font-size-base*1.2;
+    font-weight: normal;
     text-transform:uppercase;
     line-height: 1.4em;
     }
