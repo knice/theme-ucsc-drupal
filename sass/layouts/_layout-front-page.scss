@@ -1,15 +1,17 @@
 /**
 * = FRONT PAGE: grid styles
 */
-  .three_column .block .content {
+  .three_column .block-content {
     border-bottom:solid 1px $sand-dark;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     border-radius:5px;
-    -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.05);
-    -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.05);
-    box-shadow:1px 1px 2px rgba(0,0,0,0.05);
-    background-color: $sand-med;
+    -webkit-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:1px 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow:1px 1px 4px rgba(0, 0, 0, 0.1);
+    background-color: $sand-dark;
+    padding: 1em;
+    border-bottom: 1px solid $gray-light;
     }
 
   .three_column .block .content .view-content img {
@@ -55,11 +57,16 @@
     font-weight: normal;
     }
 
-    .three_column .block-title span,
-    .four_column .block-title span {
+    .three_column .block-title span {
       font-style:normal;
       font-weight: bold;
       color: $brown-light;
+    }
+
+    .four_column .block-title span {
+      font-style:normal;
+      font-weight: bold;
+      color: $brown-dark;
     }
 
   .three_column .block-title {

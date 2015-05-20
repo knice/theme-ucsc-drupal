@@ -3,6 +3,12 @@
   Lists Customizations
 
    */
+
+  ul {
+    padding: 0;
+    list-style-type: square;
+  }
+
   ul.menu li,
   #toolbar ul li {
     list-style-image:none;
@@ -11,10 +17,8 @@
 
   ul li,
   li li {
-    background:url(../images/bullet.gif) no-repeat left 5px;
-    list-style:none;
-    padding:0px 0px 0px 15px;
-    margin:0 0 0.4em 0;
+    
+    margin: 0px 0px 0.45em 1.5em;
     }
 
   .item-list ul li {
