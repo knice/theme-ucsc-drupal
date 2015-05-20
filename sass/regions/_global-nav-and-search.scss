@@ -6,6 +6,12 @@
   margin: 0;
   padding: 0;
   text-align: right;
+  @include media($mobile) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .utility_nav li {
@@ -13,35 +19,45 @@
   border-left: 2px solid $sand-med;
   display: inline-block;
   line-height: 1.2em;
-  list-style:none;
-  padding:2em 0.5em 0 0.5em;
+  list-style: none;
+  padding: 2em 0.5em 0 0.5em;
+  @include media($mobile) {
+    border: none;
+    padding: 0;
+    margin: 0.25em 0;
+    text-align: center;
+    width: auto;
+    a {
+      border: 1px solid $sand-med;
+      background-color: $sand-light;
+      border-radius: $border-radius-base;
+      display: block;
+      padding: 0.5em 0.75em;
+      width: 100%;
+    }
+  }
 }
 
 .utility_nav .home {
   float: left;
+  @include media($mobile) {
+    flex: 1 1 100%;
+    text-align: center;
+  }
 }
 
 
 /**
 *  Search field
 */
-
 .search {
-  margin: 1.5em 0 0 0;
+  box-sizing: border-box;
+  margin: 1.35em 0 0 0;
   padding: 0;
-  background: $sand;
-  border: solid 1px $sand-med;
-  border-radius: $border-radius-base;
   min-width: 20%;
-}
-
-#block-search-form .content {
-  padding: 0;
-}
-
-#block-search-form input[type="text"] {
-    width: 100%;
-    padding: 0.4em 0.5em 0.3em;
+  @include media($mobile) {
+    margin: 0 auto;
+  }
 }
 
 .search h4,
@@ -53,11 +69,18 @@
 }
 
 .search input[type='text'] {
-  border-radius: 5px;
-  width: 65%;
-  color: darken($gray-dark, 34%);
   background-color: #fff;
-  float: left;
-  padding: 4px 0 0 6px;
-  border: none;
+  border: solid 1px $sand-dark;
+  border-radius: $border-radius-base;
+  color: darken($gray-dark, 34%);
+  padding: 0.5em;
+  display: block;
+  width:100%;
+  @include media($mobile) {
+    margin: 0.5em 0 0 0;
+    padding: 0.75em 0.25em;
+    width: 100%;
+    display: block;
+    float: none;
+  }
 }

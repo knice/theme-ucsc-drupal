@@ -15,6 +15,10 @@
 	width: 100%;
 	margin-left: 0%;
 	margin-right: 0%;
+	@include media($mobile) {
+		margin: 0 0.5em;
+		width:96%;
+	}
 }
 
 /* Grid >> Global
@@ -342,4 +346,40 @@
 
 .clearfix {
 	display: block;
+}
+
+
+
+/*********
+*
+* Responsive changes to layout grid.
+*
+**********/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	@include media($mobile) {
+		width: 100%;
+		float: none;
+		margin: 1em 2%;
+		left:0;
+		padding:0;
+  }
+}
+
+.alpha,
+.omega {
+	@include media($mobile) {
+		margin: 0;
+	}
 }
