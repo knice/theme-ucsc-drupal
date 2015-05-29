@@ -118,6 +118,9 @@ if ($is_front) {
 	<div class="<?php print $footer_grid_class; ?> campus_info">
     <p>University of California Santa Cruz, 1156 High Street, Santa Cruz, CA 95064</p>
 		<p>&copy; <?php print date("Y"); ?> The Regents of the University of California. All Rights Reserved.</p>
+    <div class="row legal">
+      <p><a href="http://its.ucsc.edu/terms/">Privacy Policy and Terms of Use</a></p>
+    </div>
 	</div>
 
 </div>
