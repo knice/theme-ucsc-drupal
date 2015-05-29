@@ -18,41 +18,9 @@ if ($ucsc_css_url != "") {
   );
 }
 
-################################################################################
-# determine if this page should be displayed full-width or fixed-width, based  #
-# on the theme settings and the current path                                   #
-################################################################################
-
-$ucsc_fixed_width_default = (theme_get_setting("ucsc_fixed_width_default") == "" ? "all" : theme_get_setting("ucsc_fixed_width_default"));
-
-$ucsc_fixed_width_exceptions = theme_get_setting("ucsc_fixed_width_exceptions");
-
-$path = drupal_strtolower(drupal_get_path_alias($_GET['q']));
-
-$page_match = drupal_match_path($path, $ucsc_fixed_width_exceptions);
-
-if ($page_match) {
-  if ($ucsc_fixed_width_default == "all") {
-    $ucsc_fixed_width = false;
-  } else {
-    $ucsc_fixed_width = true;
-  }
-} else {
-  if ($ucsc_fixed_width_default == "all") {
-    $ucsc_fixed_width = true;
-  } else {
-    $ucsc_fixed_width = false;
-  }
-}
-
-if ($ucsc_fixed_width) {
-  echo "<div class=\"fixed_width outer\">\n";
-} else {
-  echo "<class=\"full_width outer\">\n";
-}
-
 ?>
 
+<div class="outer">
 <div class="wrap">
 <div class="container_12">
 
@@ -71,52 +39,42 @@ if ($ucsc_fixed_width) {
     	<div class="grid_3 omega search">
           <?php print render($page["search"]); ?>
     	</div>
-
   </div>
 
 	<div class="row grid_12">
-
   	<a href="http://www.ucsc.edu" title="Go to UCSC homepage" class="logo"><?php require_once("partials/ucsc-logotype.svg"); ?></a>
-
-	    	  <?php
-
+	  <?php
           ##
           ##  Determine site title class from the length
           ##  of the title string.
           ##
           $site_name_length = strlen($site_name);
-
- 	        if ($site_name_length >= 52) {
- 	          $title_class = "titlemega_long";
- 	        } else if ($site_name_length >= 46) {
-	          $title_class = "title_super_long";
-	        } else if ($site_name_length >= 38) {
-	          $title_class = "title_extra_long";
-	        } else if ($site_name_length >= 34) {
-	          $title_class = "title_long";
-	        } else if ($site_name_length >= 30) {
-	          $title_class = "title_medium";
-	        } else if ($site_name_length >= 28) {
-	          $title_class = "title_short";
-	        } else {
-	          $title_class = "title_standard";
-	        }
-
+          if ($site_name_length >= 52) {
+            $title_class = "titlemega_long";
+          } else if ($site_name_length >= 46) {
+            $title_class = "title_super_long";
+          } else if ($site_name_length >= 38) {
+            $title_class = "title_extra_long";
+          } else if ($site_name_length >= 34) {
+            $title_class = "title_long";
+          } else if ($site_name_length >= 30) {
+            $title_class = "title_medium";
+          } else if ($site_name_length >= 28) {
+            $title_class = "title_short";
+          } else {
+            $title_class = "title_standard";
+          }
           $ucsc_site_name = preg_replace("/  /", "<br>", $site_name);
-
           ?>
 
-	  <h1 class="site_title <?php print $title_class; ?>">
-	    	<?php echo l($ucsc_site_name, "<front>", array('attributes' => array('title' => t('Back to homepage')),'html' => TRUE));?>
-	  </h1>
+    <h1 class="site_title <?php print $title_class; ?>">
+        <?php echo l($ucsc_site_name, "<front>", array('attributes' => array('title' => t('Back to homepage')),'html' => TRUE));?>
+    </h1>
   </div>
-
 
     	<div class="row grid_12 alpha main_nav">
     		<?php print render($page["main_menu"]); ?>
     	</div>
-
-
 
 <?php
 // Logic to grab the appropriate template partial.
@@ -138,7 +96,6 @@ if ($is_front) {
 
  ?>
 
-
 <div class="row footer">
 
   <?php /* Set classes for footer divs */
@@ -159,34 +116,11 @@ if ($is_front) {
 	<?php endif; ?>
 
 	<div class="<?php print $footer_grid_class; ?> campus_info">
-		<p>This site is maintained by:
-<?php
-
-echo "<script type=\"text/javascript\">\n";
-
-echo
-  "document.write(Base64.decode('" .
-  base64_encode(
-    "<a href=\"mailto:" .
-    variable_get("site_mail", $_SERVER["SERVER_ADMIN"]) .
-    "\">" .
-    variable_get("site_mail", $_SERVER["SERVER_ADMIN"]) .
-    "</a>"
-  ) .
-  "'));\n";
-
-echo "</script>\n";
-
-?>
-    </p>
     <p>University of California Santa Cruz, 1156 High Street, Santa Cruz, CA 95064</p>
 		<p>&copy; <?php print date("Y"); ?> The Regents of the University of California. All Rights Reserved.</p>
-
 	</div>
 
 </div>
-
-
+</div><!-- /.outer -->
 </div><!-- /.container_12 -->
 </div><!-- /#wrap -->
-</div><!-- /#outer -->
