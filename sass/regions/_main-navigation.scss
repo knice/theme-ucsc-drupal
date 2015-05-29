@@ -3,12 +3,13 @@
 */
 
 
-  /* Override some defaults from above and from system.css */
-  .main_nav .block .content,
-  .front .above_content { padding:0; }
-  .main_nav .block ul { padding:0; }
+/* Override some defaults from above and from system.css */
+.main_nav .block .content,
+.front .above_content { padding:0; }
+.main_nav .block ul { padding:0; }
 
-  .main_nav .menu {
+.main_nav .menu {
+  @include media($tablet) {
     border-radius: $border-radius-base;
     display: table;
     margin: 0;
@@ -16,80 +17,96 @@
     border: 1px solid $sand-med;
     background-color: $sand-light;
   }
+}
 
-  .main_nav li {
-    border: 1px solid #e7e7e6;
+.main_nav li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  list-style-image: none;
+  border: 1px solid #e7e7e6;
+  border-width: 1px 0;
+  @include media($tablet) {
     border-left: none;
     border-right: 1px solid #e7e7e6;
     display: table-cell;
     vertical-align: middle;
-    list-style: none;
-    list-style-image: none;
-    padding: 0;
-    margin: 0;
     text-align: center;
     width: auto;
   }
-
-  .main_nav li a {
-    background-color: $sand-light;
-    color:$ucsc-gold;
-    cursor: pointer;
-    @include fontSize(14);
-    display: block;
-    height:100%;
-    letter-spacing:normal;
-    padding:0.5em 0.8em;
+  &.leaf,
+  &.collapsed,
+  &.expanded {
+    list-style-type: none;
+    list-style-image: none;
     margin: 0;
-    line-height: 1.3;
-    text-transform:uppercase;
-    text-decoration:none;
-    width:100%;
+    padding: 0;
   }
+}
 
-  .main_nav .menu.hovered,
-  .main_nav li a:focus,
-  .main_nav li a:hover,
-  .main_nav li.qsg span:hover {
-    color: $gold-light;
-    text-decoration: none;
-    background: $blue;
-    background-color: $blue;
+.main_nav li a {
+  display: block;
+  background-color: $sand-light;
+  color:$ucsc-gold;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.3;
+  padding: 0.5em 0.8em;
+  margin: 0;
+  @include fontSize(13);
+  @include media($tablet) {
+    @include fontSize(14);
+    height: 100%;
+    width: 100%;
   }
+}
 
-  .main_nav li li {
-    background:none;
-    border:none;
-    float:none;
-    display: block;
-    margin:0;
-    min-width: 14em;
-    max-width: 14em;
-    padding:0;
-    }
+.main_nav .menu.hovered,
+.main_nav li a:focus,
+.main_nav li a:hover,
+.main_nav li.qsg span:hover {
+  color: $gold-light;
+  text-decoration: none;
+  background: $blue;
+  background-color: $blue;
+}
 
-  .main_nav li li a {
-    background: $sand-light;
-    color: $blue-light;
-    height: auto;
-    padding: 0.5em;
-    text-align: left;
-    text-transform:none;
-    border-bottom: 1px solid $sand-med;
-    :last-child & {
-      border-bottom: none;
-    }
+.main_nav li li {
+  background:none;
+  border:none;
+  float:none;
+  display: block;
+  margin:0;
+  min-width: 14em;
+  max-width: 14em;
+  padding:0;
+}
+
+.main_nav li li a {
+  background: $sand-light;
+  color: $blue-light;
+  height: auto;
+  padding: 0.5em;
+  text-align: left;
+  text-transform:none;
+  border-bottom: 1px solid $sand-med;
+  :last-child & {
+    border-bottom: none;
   }
+}
+
+@include media($tablet) {
 
   .main_nav li:first-child a {
     border-top-left-radius: $border-radius-base;
     border-bottom-left-radius: $border-radius-base;
-    }
+  }
 
   .main_nav li:last-child a {
     border-top-right-radius: $border-radius-base;
     border-bottom-right-radius: $border-radius-base;
-    }
+  }
 
   /* No :first-child rounded corners for nested <li>s */
   .main_nav li li:first-child a {
@@ -102,9 +119,11 @@
     border-bottom-right-radius:0px;
   }
 
+}
 
-  .main_nav ul > li:first-child { border-left:none; }
-  .main_nav ul > li:last-child { border-right:none; }
+// No left border for the sub-menu items
+.main_nav ul > li li:first-child { border-left: none; }
+.main_nav ul > li li:last-child { border-right: none; }
 
   /* dropdown menu styles */
 
