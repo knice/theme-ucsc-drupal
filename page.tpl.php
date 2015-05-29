@@ -1,3 +1,6 @@
+
+
+
 <?php
 
 ################################################################################
@@ -50,18 +53,11 @@ if ($ucsc_fixed_width) {
 
 ?>
 
-
-
-	<!-- Accessibility links. Hidden until they receive :focus -->
-  <ul class="access_links">
-      <li><a href="#main">Skip to main content</a></li>
-      <li><a href="#navigation">Skip to primary navigation</a></li>
-  </ul>
-
 <div class="wrap">
 <div class="container_12">
 
   <div class="row">
+
     	<div class="grid_9 alpha">
     		<ul class="utility_nav">
     			<li class="home"><a href="http://www.ucsc.edu">University Home</a></li>
@@ -75,16 +71,19 @@ if ($ucsc_fixed_width) {
     	<div class="grid_3 omega search">
           <?php print render($page["search"]); ?>
     	</div>
+
   </div>
 
+	<div class="row grid_12">
 
-
-    	<div class="row grid_12">
-
-	    	<a href="http://www.ucsc.edu" title="Go to UCSC homepage" class="logo"><?php require_once("partials/ucsc-logotype.svg"); ?></a>
+  	<a href="http://www.ucsc.edu" title="Go to UCSC homepage" class="logo"><?php require_once("partials/ucsc-logotype.svg"); ?></a>
 
 	    	  <?php
 
+          ##
+          ##  Determine site title class from the length
+          ##  of the title string.
+          ##
           $site_name_length = strlen($site_name);
 
  	        if ($site_name_length >= 52) {
@@ -103,18 +102,14 @@ if ($ucsc_fixed_width) {
 	          $title_class = "title_standard";
 	        }
 
-          $ucsc_site_name = preg_replace(
-            "/  /",
-            "<br>",
-            $site_name
-          );
+          $ucsc_site_name = preg_replace("/  /", "<br>", $site_name);
 
           ?>
 
-	    	  <h1 class="site_title <?php print $title_class; ?>">
-	    	    	<?php echo l($ucsc_site_name, "<front>", array('attributes' => array('title' => t('Back to homepage')),'html' => TRUE));?>
-	    	  </h1>
-    	</div>
+	  <h1 class="site_title <?php print $title_class; ?>">
+	    	<?php echo l($ucsc_site_name, "<front>", array('attributes' => array('title' => t('Back to homepage')),'html' => TRUE));?>
+	  </h1>
+  </div>
 
 
     	<div class="row grid_12 alpha main_nav">

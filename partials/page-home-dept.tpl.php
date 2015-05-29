@@ -1,5 +1,6 @@
 
 <!-- Default homepage template -->
+<main id="main-content">
 
 <?php if ($page["above_content"]): ?>
 	<div class="row grid_12 above_content">
@@ -37,3 +38,5 @@
 		<?php print render($page["below_content"]); ?>
 	</div>
 <?php endif; ?>
+
+</main>

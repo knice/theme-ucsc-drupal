@@ -24,7 +24,7 @@
 	<?php endif; ?>
 
 
-	<div class="content">
+	<div class="content" id="main-content">
 		<?php if ($show_messages && $messages): print render($messages); endif; ?>
 		<?php if($page["help"]): print '<div class="help">' . render($page["help"]) . '</div>'; endif; ?>
 		<?php print render($tabs); ?>
