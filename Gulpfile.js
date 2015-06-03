@@ -12,10 +12,9 @@ var pkg = require('./package.json'),
     bump = require('gulp-bump'),
     markdown = require('gulp-markdown'),
     svgo = require('imagemin-svgo');
-// var s3 = require('gulp-s3-upload')({
-//         accessKeyId: process.env.S3_ACCESS_KEY_ID,
-//         secretAccessKey: process.env.S3_SECRET_KEY
-//     });
+    var s3 = require('gulp-s3-upload')({
+       accessKeyId: process.env.S3_ACCESS_KEY_ID,
+      secretAccessKey: process.env.S3_SECRET_KEY     });
 
 //
 // Set default file path variables for tasks
