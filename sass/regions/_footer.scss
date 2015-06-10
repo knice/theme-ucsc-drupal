@@ -1,7 +1,33 @@
 /* Hide block title in the footer (but keep it in the HTML for accessibility) */
-.footer .block .title { position:absolute; left:1000em; overflow:hidden; }
-.footer .block .content { padding:0px; }
-.footer li { background-image: none; padding: 0; margin: 0 0 0 6px; }
+.footer {
+  letter-spacing: normal;
+  color: $gray-dark;
+  text-transform: none;
+  text-align: center;
+  @include fontSize(13);
+  @include media($tablet) {
+    letter-spacing: 0.05em;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
+
+.footer .block .title { 
+  position:absolute;
+  left:1000em;
+  overflow:hidden;
+}
+
+.footer .block .content {
+  padding:0px;
+}
+
+.footer li { 
+  background-image: none;
+  padding: 0;
+  margin: 0 0 0 6px;
+}
 
 .footer_links {
   line-height:40px;
