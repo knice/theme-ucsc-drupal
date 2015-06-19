@@ -131,3 +131,8 @@
     padding-left: 0;
     margin-left: 1.5em;
   }
+
+// For accessibility, image alt text is black.
+img {
+  color: #000000;
+}
