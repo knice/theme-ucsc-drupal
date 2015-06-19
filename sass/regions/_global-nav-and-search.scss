@@ -34,21 +34,27 @@
     width: 100%;
   }
   // Tablet screens and up
-  @include media($tablet) {
+  @include media($portrait) {
     @include fontSize(14);
-    border-left: 1px solid $gray-light;
     display: inline-block;
     line-height: 1.2em;
     list-style: none;
     margin: 0 0 0.4em 0;
-    padding: 1.25em 0.25em 0 0.25em;
+    padding: 0.8em 0.15em 0 0.15em;
     a {
       border: none;
       background-color: transparent;
       border-radius: 0;
       display: block;
-      padding: 0.35em 0.5em;
+      padding: 0.35em 0.25em;
       width: auto;
+    }
+  }
+  @include media($tablet) {
+    border-left: 1px solid $gray-light;
+    padding: 1.25em 0.25em 0 0.25em;
+    a {
+      padding: 0.35em 0.5em;
     }
   }
 }
