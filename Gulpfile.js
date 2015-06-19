@@ -1,21 +1,18 @@
 var pkg = require('./package.json'),
     gulp = require('gulp'),
-    changed = require('gulp-changed'),
     autoprefix = require('gulp-autoprefixer'),
-    sass = require('gulp-ruby-sass'),
-    concat = require('gulp-concat'),
-    minifycss = require('gulp-minify-css'),
-    clean = require('gulp-clean'),
-    rename = require('gulp-rename'),
-    imagemin = require('gulp-imagemin'),
-    zip = require('gulp-zip'),
     bump = require('gulp-bump'),
+    changed = require('gulp-changed'),
+    del = require('del'),
+    concat = require('gulp-concat'),
+    imagemin = require('gulp-imagemin'),
+    livereload = require('gulp-livereload'),
     markdown = require('gulp-markdown'),
-    svgo = require('imagemin-svgo');
-    // var s3 = require('gulp-s3-upload')({
-    //   accessKeyId: process.env.S3_ACCESS_KEY_ID,
-    //  secretAccessKey: process.env.S3_SECRET_KEY
-    // });
+    minifycss = require('gulp-minify-css'),
+    rename = require('gulp-rename'),
+    sass = require('gulp-ruby-sass'),
+    svgo = require('imagemin-svgo'),
+    zip = require('gulp-zip');
 
 //
 // Set default file path variables for tasks
@@ -29,14 +26,11 @@ var paths = {
 //
 // Clean the build folder so we start clean
 //
-gulp.task('clean', function() {
-    gulp.src([
-        './css/**',
-        './build/**'
-        ], {
-        read: false
-    })
-    .pipe(clean());
+gulp.task('clean', function(cb) {
+    del([
+        './css/**/*',
+        './build/**/*'
+        ], cb);
 });
 
 
@@ -98,7 +92,7 @@ gulp.task('bump', function(){
 
 
 //
-// Implement later: Create zip archive of static file assets
+// Create zip archive of static file assets
 //
 gulp.task('build', ['clean', 'styles', 'readme'], function() {
     return gulp.src([
@@ -118,21 +112,10 @@ gulp.task('build', ['clean', 'styles', 'readme'], function() {
 });
 
 
-
-gulp.task('upload', function() {
-    gulp.src("./build/**")
-        .pipe(s3({
-            Bucket: process.env.S3_UCSC_DRUPAL, //  Required
-            ACL:    'public-read' //  Needs to be user-defined
-        }));
-});
-
-
-
 //
 // The default task (called when you run `gulp`)
 //
-gulp.task('default', ['styles'], function () {
+gulp.task('default', ['clean','styles'], function () {
     gulp.watch('sass/**/*.scss', ['styles']);
     // gulp.watch('app/src/images/**/.**', ['images']);
 });
@@ -142,10 +125,3 @@ gulp.task('default', ['styles'], function () {
 // The fresh task: compiles everything so we can zip it up with 'gulp build'.
 //
 gulp.task('fresh', ['clean', 'styles']);
-
-
-//
-// Cleans the CSS and build directories, runs the styles and build tasks,
-// then uploads the zipped theme to S3.
-//
-gulp.task('deploy', ['build', 'upload']);
