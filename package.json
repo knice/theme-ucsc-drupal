@@ -24,7 +24,8 @@
     "gulp-ruby-sass": "^0.6.0",
     "gulp-s3-upload": "^1.0.4",
     "gulp-zip": "^0.4.0",
-    "imagemin-svgo": "^4.0.0"
+    "imagemin-svgo": "^4.0.0",
+    "tiny-lr": "^0.1.6"
   },
   "dependencies": {
     "gulp-bump": "^0.3.0",

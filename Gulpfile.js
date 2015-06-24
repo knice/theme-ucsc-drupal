@@ -1,18 +1,19 @@
-var pkg = require('./package.json'),
-    gulp = require('gulp'),
-    autoprefix = require('gulp-autoprefixer'),
-    bump = require('gulp-bump'),
-    changed = require('gulp-changed'),
-    del = require('del'),
-    concat = require('gulp-concat'),
-    imagemin = require('gulp-imagemin'),
-    livereload = require('gulp-livereload'),
-    markdown = require('gulp-markdown'),
-    minifycss = require('gulp-minify-css'),
-    rename = require('gulp-rename'),
-    sass = require('gulp-ruby-sass'),
-    svgo = require('imagemin-svgo'),
-    zip = require('gulp-zip');
+var pkg         = require('./package.json'),
+    gulp        = require('gulp'),
+    autoprefix  = require('gulp-autoprefixer'),
+    bump        = require('gulp-bump'),
+    changed     = require('gulp-changed'),
+    del         = require('del'),
+    concat      = require('gulp-concat'),
+    imagemin    = require('gulp-imagemin'),
+    livereload  = require('gulp-livereload'),
+    markdown    = require('gulp-markdown'),
+    minifycss   = require('gulp-minify-css'),
+    rename      = require('gulp-rename'),
+    sass        = require('gulp-ruby-sass'),
+    svgo        = require('imagemin-svgo'),
+    server      = require('tiny-lr')(),
+    zip         = require('gulp-zip');
 
 //
 // Set default file path variables for tasks
@@ -47,7 +48,8 @@ gulp.task('styles', function() {
         }))
         .pipe(autoprefix('last 4 versions'))
         .pipe(minifycss())
-        .pipe(gulp.dest('./css/'));
+        .pipe(gulp.dest('./css/'))
+        .pipe(livereload(server));
 });
 
 
@@ -117,7 +119,16 @@ gulp.task('build', ['clean', 'styles', 'readme'], function() {
 //
 gulp.task('default', ['clean','styles'], function () {
     gulp.watch('sass/**/*.scss', ['styles']);
-    // gulp.watch('app/src/images/**/.**', ['images']);
+    livereload.listen(35729, function(err) {
+      host: '192.168.44.44';
+      if (err) {
+        return gutil.log(err);
+      }
+    });
+
+    // livereload.listen(35729, function(err){
+    //     host: '192.168.44.44'
+    // });
 });
 
 
