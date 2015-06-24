@@ -3,8 +3,8 @@
 */
   .logo {
     display:block;
-    height:60px;
-    width:220px;
+    height:62px;
+    width:230px;
     float:left;
     margin:0;
     padding:0 1em 0 0;
@@ -12,43 +12,24 @@
   }
 
   .site_title {
-    line-height:1.1em;
+    line-height: 1;
     margin-left: 12px;
-    margin-top:0;
-    float:left;
-  }
-
-  .site_title.title_standard { margin-top:2px; }
-  .site_title.title_short,
-  .site_title.title_medium { margin-top:4px; }
-  .site_title.title_mega_long { margin-top:-4px; }
-  .site_title.title_extra_long,
-  .site_title.title_super_long { margin-top:-6px; }
-
-  .site_title a {
     margin: 0;
-    padding: 0 0 0 0;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    color: $gold-med;
-    font-weight: 400;
-    text-decoration:none;
+    float: left;
+    min-height: 60px;
+    a {
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      color: $gold-med;
+      font-weight: 400;
+      text-decoration:none;
+    }
+    &.large-type a {
+      display: block;
+      margin-top: 0.2em;
+      font-size: 3rem;
+    }
+    &.small-type a {
+      font-size: 1.8rem;
+    }
   }
-
-  /**
-  *   Page title classes for titles of different lengths
-  */
-  .site_title.title_standard,
-  .site_title.title_standard a { font-size: 3.2rem; }
-  .site_title.title_short,
-  .site_title.title_short a { font-size: 3rem; }
-  .site_title.title_medium,
-  .site_title.title_medium a { font-size: 2.8rem; }
-  .site_title.title_long,
-  .site_title.title_long a { font-size: 1.8rem; width: 60%; }
-  .site_title.title_extra_long,
-  .site_title.title_extra_long a { font-size: 2rem; width:78%; }
-  .site_title.title_super_long,
-  .site_title.title_super_long a { font-size: 1.8rem; width:68%; }
-  .site_title.title_mega_long,
-  .site_title.title_mega_long a { font-size: 1.6rem; width:58%; }

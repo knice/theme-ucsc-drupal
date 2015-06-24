@@ -49,20 +49,10 @@ if ($ucsc_css_url != "") {
           ##  of the title string.
           ##
           $site_name_length = strlen($site_name);
-          if ($site_name_length >= 52) {
-            $title_class = "titlemega_long";
-          } else if ($site_name_length >= 46) {
-            $title_class = "title_super_long";
-          } else if ($site_name_length >= 38) {
-            $title_class = "title_extra_long";
-          } else if ($site_name_length >= 34) {
-            $title_class = "title_long";
-          } else if ($site_name_length >= 30) {
-            $title_class = "title_medium";
-          } else if ($site_name_length >= 28) {
-            $title_class = "title_short";
+          if ($site_name_length >= 32) {
+            $title_class = "small-type";
           } else {
-            $title_class = "title_standard";
+            $title_class = "large-type";
           }
           $ucsc_site_name = preg_replace("/  /", "<br>", $site_name);
           ?>
