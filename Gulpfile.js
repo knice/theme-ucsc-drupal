@@ -119,6 +119,7 @@ gulp.task('build', ['clean', 'styles', 'readme'], function() {
 //
 gulp.task('default', ['clean','styles'], function () {
     gulp.watch('sass/**/*.scss', ['styles']);
+    // gulp.watch('app/src/images/**/.**', ['images']);
     livereload.listen(35729, function(err) {
       host: '192.168.44.44';
       if (err) {
