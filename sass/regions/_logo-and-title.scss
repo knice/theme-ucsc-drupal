@@ -3,12 +3,16 @@
 */
   .logo {
     display:block;
-    height:62px;
-    width:230px;
+    width: 180px;
+    height: auto;
     float:left;
     margin:0;
     padding:0 1em 0 0;
     overflow:hidden;
+    @include media($tablet) {
+      height:62px;
+      width:230px;
+    }
   }
 
   .site_title {
