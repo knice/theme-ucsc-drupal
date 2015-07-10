@@ -91,7 +91,7 @@ if ($is_front) {
   <?php /* Set classes for footer divs */
     if ($page["footer"]) {
       // Links region is populated
-      $footer_grid_class = "grid_6 pull_6";
+      $footer_grid_class = "grid_7 pull_5";
     }
     else {
       // Links region is empty
@@ -100,7 +100,7 @@ if ($is_front) {
   ?>
 
 	<?php if($page["footer"]): ?>
-    <div class="grid_6 push_6 footer_links">
+    <div class="grid_5 push_7 footer_links">
 		  <?php print render($page["footer"]); ?>
     </div>
 	<?php endif; ?>
@@ -108,12 +108,15 @@ if ($is_front) {
 	<div class="<?php print $footer_grid_class; ?> campus_info">
     <p>University of California Santa Cruz, 1156 High Street, Santa Cruz, CA 95064</p>
 		<p>&copy; <?php print date("Y"); ?> The Regents of the University of California. All Rights Reserved.</p>
-    <div class="row legal">
-      <p><a href="http://its.ucsc.edu/terms/">Privacy Policy and Terms of Use</a></p>
-    </div>
 	</div>
 
-</div>
+</div><!-- /.footer --> 
+
 </div><!-- /.outer -->
+
+<div class="row legal">
+  <p><a href="http://its.ucsc.edu/terms/">Privacy Policy and Terms of Use</a></p>
+</div>
+
 </div><!-- /.container_12 -->
 </div><!-- /#wrap -->
