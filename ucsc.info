@@ -1,6 +1,6 @@
 name = UCSC
 description = Responsive Drupal Theme for UCSC websites.
-version = 3.0.7
+version = 3.0.8
 core = 7.x
 engine = phptemplate
 
