@@ -21,14 +21,6 @@
   a:focus,
   a:hover { text-decoration:underline; }
 
-  blockquote {
-    color: $gray;
-    font-weight:bold;
-    margin: 2em;
-    padding:0.25em 0 0.25em 1.5em;
-    font-size: $font-size-base;
-    border-left: 0.25em solid $body-text;
-    }
 
   abbr { cursor: help; }
   strong { font-weight: bold; }
@@ -40,36 +32,45 @@
     margin: 0.75em 0;
     }
 
+  blockquote {
+    color: $gray;
+    font-weight: normal;  
+    margin: 2em;
+    padding:0.15em 0 0.15em 1.5em;
+    font-size: $font-size-base;
+    border-left: 10px solid $gray-light;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: normal;
   }
 
   h1 {
-    color: darken($body-text, 10%);
+    color: darken($body-text, 5%);
     font-size: 2em;
-    line-height: 1;
-    letter-spacing: -0.03125em;
-    margin: 1em 0 0.5em;
+    line-height: 1.1;
+    margin: 0.5em 0 0.5em;
   }
 
   h2 {
-    color: darken($body-text, 5%);
-    line-height: 1;
+    color: darken($body-text, 2%);
+    font-size: 1.46em;
+    line-height: 1.2;
     margin: 1em 0 0.5em;
   }
 
   h3 {
-    color: darken($body-text, 10%);
+    color: darken($body-text, 6%);
     font-weight: 400;
-    font-size: 1.3125em;
-    line-height: 1.1429;
+    font-size: 1.3em;
+    line-height: 1.15;
     margin: 1.15em 0 0.5em;
   }
 
   h4 {
-    color: darken($body-text, 10%);
-    font-weight: 400;
+    color: darken($body-text, 6%);
+    font-weight: 500;
     font-size: 1.125em;
     line-height: 1.3334;
     margin: 1.25em 0 0.25em;
@@ -77,8 +78,8 @@
   }
 
   h5 {
-    color: darken($body-text, 5%);
-    font-weight: 700;
+    color: $body-text;
+    font-weight: 500;
     font-size: 1em;
     line-height: 1;
     margin: 1.5em 0 0.25em;
@@ -87,8 +88,8 @@
 
   h6 {
     color: $body-text;
-    font-weight: 700;
-    font-size: 0.875em;
+    font-weight: 400;
+    font-size: 1em;
     line-height: 1.1429;
     margin: 1.7em 0 0.15em;
     -webkit-font-smoothing: antialiased;
