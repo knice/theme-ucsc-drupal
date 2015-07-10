@@ -35,7 +35,6 @@
 			<?php print render($page["four_column_four"]); ?>
 		</div>
 	</div>
-</div>
 
 <?php if($page["below_content"]): ?>
 	<div class="row grid_12 below_content">
