@@ -1,7 +1,12 @@
 /**
-* Messages and Help styles
-* (Taken and modified from Garland)
+*   ## Messages and Help styles ##
+* 
+*   Added the .content class wrapper to make these
+*   rules more specific than the Drupal defaults,
+*   located in system styles.
 */
+
+.content {
 
   .messages {
     min-height:1em;
@@ -9,8 +14,8 @@
     background-color: $messages;
     border:1px solid $messages-border;
     padding:1em 1em 1em 2em !important;
-    margin-bottom:30px;
-    }
+    margin: 0 0 2em;
+  }
 
   .messages a { font-weight:700; }
 
@@ -54,3 +59,5 @@
   .messages-multiple {
     padding-bottom:0;
     }
+
+ }   
