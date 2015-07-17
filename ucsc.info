@@ -10,6 +10,7 @@ scripts[] = base64.js
 
 features[] = name
 features[] = logo
+features[] = favicon
 
 regions[header] = Header
 regions[main_menu] = Main Menu
