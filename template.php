@@ -10,4 +10,23 @@ function ucsc_form_alter(&$form, &$form_state, $form_id) {
   $form['search_block_form']['#attributes']['placeholder'] = t($sitename);
 }
 
+
+function ucsc_breadcrumb($variables) {
+  $breadcrumb = $variables['breadcrumb'];
+  if (!empty($breadcrumb)) {
+    // Provide a navigational heading to give context for breadcrumb links to
+    // screen-reader users. Make the heading invisible with .element-invisible.
+    $output = '<h2 class="element-invisible">' . t('Path to this page') . '</h2>';
+    $crumbs = '<ul class="breadcrumb">';
+    $array_size = count($breadcrumb);
+    $i = 0;
+    while ( $i < $array_size) {
+      $crumbs .= '<li>' . $breadcrumb[$i] . '</li>';
+      $i++;
+    }
+    $crumbs .= '</ul>';
+    return $crumbs;
+  }
+}
+
 ?>

@@ -3,31 +3,28 @@
 */
 
 .breadcrumb {
-  margin:1em 0 22px 1em;
+  font-size: 0.75em;
+  margin: -0.9em 0 1em 0.6em;
+  line-height: 1em;
 }
 
-.breadcrumbs {
-  clear:both;
-  display:block;
-  margin:-10px 0 0 0;
-  line-height:16px;
-  }
-
-.breadcrumbs ul li {
+.breadcrumb li {
   display:inline;
-  padding:0;
+  padding: 0;
+  margin: 0;
   background-image:none;
-  }
+}
 
-.breadcrumbs ul li:after {
+.breadcrumb a {
+  padding: 0 0.1em;
+}
+
+.breadcrumb li:after {
   content:" / ";
-  }
+}
 
-.breadcrumbs ul li:last-child:after {
+.breadcrumb li:last-child:after {
   content:"";
-  }
+}
 
-.breadcrumbs a {
-  padding:0 3px;
-  }
 
