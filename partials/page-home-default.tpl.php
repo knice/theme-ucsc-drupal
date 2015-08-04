@@ -10,13 +10,13 @@
 
 
 	<div class="row grid_12 three_column">
-		<div class="grid_4 alpha three_column_one">
+		<div class="grid_4 three_column_one">
 			<?php print render($page["three_column_one"]); ?>
 		</div>
 		<div class="grid_4 three_column_two">
 			<?php print render($page["three_column_two"]); ?>
 		</div>
-		<div class="grid_4 omega three_column_three">
+		<div class="grid_4 three_column_three">
 			<?php print render($page["three_column_three"]); ?>
 		</div>
 	</div>
