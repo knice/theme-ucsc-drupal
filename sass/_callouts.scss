@@ -15,8 +15,8 @@
 .callout-full,
 .callout-left,
 .callout-right {
-  background-color: $sand-light;
-  border-bottom: 1px solid $gray-dark;
+  background-color: lighten($sand, 2%);
+  border-bottom: solid 1px #dad8c8;
   display: table;
   padding: 0.5em;
   border-radius: $border-radius-base;
