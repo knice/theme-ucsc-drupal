@@ -21,10 +21,13 @@
     margin: 0px 0px 0.45em 1.5em;
     }
 
-  .item-list ul li {
-    list-style:none;
-    margin:0 0 0.4em 0;
-    padding:0 0 0 15px;
+  .item-list ul {
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      list-style:none;
+      margin: 0 0 0.4em 0;
+      padding: 0 0 0 0;
     }
-
+  }
 
