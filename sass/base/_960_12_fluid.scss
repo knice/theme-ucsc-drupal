@@ -356,30 +356,78 @@
 *
 **********/
 
-.grid_1,
-.grid_2,
-.grid_3,
-.grid_4,
-.grid_5,
-.grid_6,
-.grid_7,
-.grid_8,
-.grid_9,
-.grid_10,
-.grid_11,
-.grid_12 {
-	@include media($mobile) {
-		width: 100%;
-		float: none;
-		margin: 1em 2%;
-		left:0;
-		padding:0;
-  }
-}
+.container_12 {
 
-.alpha,
-.omega {
-	@include media($mobile) {
-		margin: 0;
+	.suffix_1,
+	.suffix_2,
+	.suffix_3,
+	.suffix_4,
+	.suffix_5,
+	.suffix_6,
+	.suffix_7,
+	.suffix_8,
+	.suffix_9,
+	.suffix_10,
+	.suffix_11,
+	.prefix_1,
+	.prefix_2,
+	.prefix_3,
+	.prefix_4,
+	.prefix_5,
+	.prefix_6,
+	.prefix_7,
+	.prefix_8,
+	.prefix_9,
+	.prefix_10,
+	.prefix_11,
+	.pull_1,
+	.pull_2,
+	.pull_3,
+	.pull_4,
+	.pull_5,
+	.pull_6,
+	.pull_7,
+	.pull_8,
+	.pull_9,
+	.pull_10,
+	.pull_11,
+	.push_1,
+	.push_2,
+	.push_3,
+	.push_4,
+	.push_5,
+	.push_6,
+	.push_7,
+	.push_8,
+	.push_9,
+	.push_10,
+	.push_11,
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		@include media($mobile) {
+			width: 100%;
+			float: none;
+			margin: 1em 2%;
+			left:0;
+			padding:0;			
+	  }
 	}
+
+	.alpha,
+	.omega {
+		@include media($mobile) {
+			margin: 0;
+		}
+	}
+
 }
