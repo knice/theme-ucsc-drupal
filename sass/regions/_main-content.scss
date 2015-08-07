@@ -4,7 +4,7 @@
 
 
   .content {
-    clear: both;
+    clear: both;    
   }
 
   .content img {
@@ -12,6 +12,7 @@
     border-radius: $border-radius-base;
     margin: 0.15em;
     padding: 0.5em;
+    max-width: 100%;
   }
 
   .left_content .block .content,
