@@ -15,7 +15,7 @@
 		<div class="row grid_12">
 	<?php } ?>
 
-		<h1 class="page_title"><?php print $title; ?></h1>
+	<h1 class="page_title"><?php print $title; ?></h1>
 
 	<?php if($page["above_content"]): ?>
 	  <div class="above_content" class="grid_12">
