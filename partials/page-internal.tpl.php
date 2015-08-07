@@ -39,9 +39,8 @@
 	    </div>
 	<?php endif; ?>
 
-	</div>
-
 	<?php if ($page["sidebar_first"]) { ?>
+	</div>
 		<div class="grid_3 pull_9 left_content alpha">
 			<?php print render($page["sidebar_first"]); ?>
 		</div>

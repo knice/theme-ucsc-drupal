@@ -14,12 +14,17 @@
   width: 100%;
 }
 
-.row {
+.row {  
   @include row;
+  // border: 1px solid red;
   margin: 0 0 1.5em;
   @include media($mobile) {
     margin: 0 0 0.5em;
   }
+}
+
+div[class^='grid_'] {
+  // border: 1px solid red;
 }
 
 .content,
