@@ -111,8 +111,9 @@ div.wysiwygToolbar div table tr td {
 
   button,
   input[type="submit"] {
-    background-color: lighten($gray-light, 20%);
-    border: 1px solid lighten($gray-light, 20%);
+    background-color: $blue;
+    color: #fff;
+    border: 2px solid $blue;
     cursor: pointer;
     display: inline-block;
     text-align: center;
@@ -128,8 +129,8 @@ div.wysiwygToolbar div table tr td {
    input[type="submit"]:focus,
    input[type="submit"]:hover,
    input[type="submit"]:active {
-     background-color: #cdcdcd;
-     color: #000;
+     background-color: $sand-light;
+     color: $blue;
    }
 
    input[type="checkbox"],
