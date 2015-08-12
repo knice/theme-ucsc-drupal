@@ -1,4 +1,4 @@
-@media print {
+@media all {
 
   *,
   html,
@@ -8,6 +8,14 @@
     font-size: 10pt;
     line-height: 1.2;
   }
+  
+  // [class^='grid_'] {   
+  //   float: none;
+  //   width: 100%;
+  //   left: 0;
+  //   margin: 8pt 0;
+  //   padding: 0;
+  // }
 
   .utility_nav,
   .search,
@@ -16,11 +24,11 @@
   .breadcrumbs,
   .above_content,
   .left-content,
-  .footer,
   .legal {
     display:none;
     float:none;
   }
+
 
   .grid_9.pull_1,
   .grid_9.push_3 {
@@ -28,7 +36,6 @@
     width:100%;
     padding:0;
     margin:0;
-
   }
 
   .outer,
