@@ -24,6 +24,10 @@ fieldset.collapsible.collapsed {
   border: 1px solid $gray-light;
 }
 
+.form-wrapper {
+  margin: 0.75em 0;
+}
+
 .form-item label {
   font-weight: normal;
   color: $body-text;
@@ -99,9 +103,8 @@ div.wysiwygToolbar div table tr td {
    input[type="password"],
    textarea {
      border: 1px solid $gray-light;
-     padding: 0.25em 0.35em;
+     padding: 0.45em 0.35em;
      background: #fff;
-     display: block;
      margin: 0.1em 0 0.2em 0;
    }
 
@@ -120,7 +123,7 @@ div.wysiwygToolbar div table tr td {
     margin: auto 0.5em auto 0;
     font-size: 1rem;
     border-radius: $border-radius-base;
-    padding: 0.5em 0.85em;
+    padding: 0.4em 0.85em;
    }
 
    button:focus,
