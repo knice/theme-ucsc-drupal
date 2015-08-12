@@ -2,12 +2,14 @@
 * = CSS3 column styles
 */
 .columns-2 {
-  background-color: $sand-light;
-  border-bottom: 1px solid $gray-dark;
+  background-color: darken($sand-light, 5%);
+  color: darken($gray-dark, 12%);
+  border-bottom: 1px solid darken($sand-light, 25%);
   padding: 0.8em;
   border-radius: $border-radius-base;
   column-count: 2;
   column-gap: 1em;
+  margin-bottom: 1em; 
 }
 
 .columns-2 :first-child {
