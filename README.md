@@ -1,5 +1,3 @@
-This theme is in development. Breaking changes may occur frequently.
-
 # UCSC Drupal v3 
 
 A responsive re-write of the campus Drupal theme.
