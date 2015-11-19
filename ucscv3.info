@@ -1,4 +1,4 @@
-name = UCSC
+name = UCSCv3
 description = Responsive Drupal Theme for UCSC websites.
 version = 3.1.0
 core = 7.x

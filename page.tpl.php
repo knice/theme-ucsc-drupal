@@ -1,9 +1,9 @@
 <?php
 
 # If we have a custom CSS, add it.
-$ucsc_css_url = theme_get_setting("ucsc_css_url");
+$ucscv3_css_url = theme_get_setting("ucscv3_css_url");
 
-if ($ucsc_css_url != "") {
+if ($ucscv3_css_url != "") {
   drupal_add_css(
     $ucsc_css_url,
     array(
@@ -37,19 +37,19 @@ if ($ucsc_css_url != "") {
       </div>
 
       <div class="row grid_12">
-        
+
         <a href="http://www.ucsc.edu" title="Go to UCSC homepage" class="logo"><?php require_once("partials/ucsc-logotype.svg"); ?></a>
-    
-        <?php        
+
+        <?php
           ##  Determine site title class from the length of the title string.
           $site_name_length = strlen($site_name);
-          
+
           if ($site_name_length >= 32) {
             $title_class = "small-type";
           } else {
             $title_class = "large-type";
           }
-          
+
           $ucsc_site_name = preg_replace("/  /", "<br>", $site_name);
         ?>
 
@@ -107,7 +107,7 @@ if ($is_front) {
           <p>&copy; <?php print date("Y"); ?> The Regents of the University of California. All Rights Reserved.</p>
         </div>
 
-      </div><!-- /.footer --> 
+      </div><!-- /.footer -->
 
       <div class="row legal">
         <p><a href="http://its.ucsc.edu/terms/">Privacy Policy and Terms of Use</a></p>

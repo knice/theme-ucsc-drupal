@@ -107,10 +107,9 @@ gulp.task('build', ['clean', 'styles', 'readme'], function() {
             './*.info',
             './*.md'
         ], {
-            base: "./ucsc"
+            base: "./"
         })
-        .pipe(zip('ucsc.zip'))
-        .pipe(gulp.dest('./build'));
+        .pipe(gulp.dest('./build/ucscv3'));
 });
 
 

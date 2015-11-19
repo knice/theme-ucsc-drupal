@@ -1,17 +1,17 @@
 <?php
 
-function ucsc_form_system_theme_settings_alter(&$form, &$form_state) {
+function ucscv3_form_system_theme_settings_alter(&$form, &$form_state) {
   ################################################################################
   # basic ucsc settings                                                        #
   ################################################################################
 
-  $form["ucsc"] = array(
+  $form["ucscv3"] = array(
     "#type" => "fieldset",
     "#title" => "UCSC Settings",
     "#description" => "<p>These settings control the appearance and functionality of the UCSC theme.</p>",
   );
 
-    $form["ucsc"]["ucsc_frontpage_template"] = array(
+    $form["ucscv3"]["ucsc_frontpage_template"] = array(
     "#type" => "radios",
     "#title" => t("Choose a template to use for your home page."),
     "#default_value" => (theme_get_setting("ucsc_frontpage_template") == "" ? "default" : theme_get_setting("ucsc_frontpage_template")),
@@ -24,19 +24,19 @@ function ucsc_form_system_theme_settings_alter(&$form, &$form_state) {
       "#required" => true,
   );
 
-  $form["ucsc"]["ucsc_google_cse"] = array(
+  $form["ucscv3"]["ucsc_google_cse"] = array(
     "#type" => "textfield",
     "#title" => t("Google Custom Search Engine ID"),
     "#default_value" => theme_get_setting("ucsc_google_cse"),
   );
 
-  $form["ucsc"]["ucsc_google_url"] = array(
+  $form["ucscv3"]["ucsc_google_url"] = array(
     "#type" => "textfield",
     "#title" => t("Google Custom Search Engine URL"),
     "#default_value" => theme_get_setting("ucsc_google_url"),
   );
 
-  $form["ucsc"]["ucsc_css_url"] = array(
+  $form["ucscv3"]["ucsc_css_url"] = array(
     "#type" => "textfield",
     "#title" => t("Supplementary CSS URL"),
     "#default_value" => theme_get_setting("ucsc_css_url"),
@@ -47,7 +47,7 @@ function ucsc_form_system_theme_settings_alter(&$form, &$form_state) {
   # site are full-width and which are fixed-width                                #
   ################################################################################
 
-  $form["ucsc"]["ucsc_fixed_width_default"] = array(
+  $form["ucscv3"]["ucsc_fixed_width_default"] = array(
     "#type" => "radios",
     "#title" => t("Show fixed width on specific pages"),
     "#default_value" => (theme_get_setting("ucsc_fixed_width_default") == "" ? "all" : theme_get_setting("ucsc_fixed_width_default")),
@@ -58,7 +58,7 @@ function ucsc_form_system_theme_settings_alter(&$form, &$form_state) {
     "#required" => true,
   );
 
-  $form["ucsc"]["ucsc_fixed_width_exceptions"] = array(
+  $form["ucscv3"]["ucsc_fixed_width_exceptions"] = array(
     "#type" => "textarea",
     "#title" => t("Site Width Exceptions"),
     "#default_value" => theme_get_setting("ucsc_fixed_width_exceptions"),
