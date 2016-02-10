@@ -36,10 +36,10 @@ function ucscv3_form_system_theme_settings_alter(&$form, &$form_state) {
     "#default_value" => theme_get_setting("ucsc_google_url"),
   );
 
-  $form["ucscv3"]["ucsc_css_url"] = array(
+  $form["ucscv3"]["ucscv3_css_url"] = array(
     "#type" => "textfield",
     "#title" => t("Supplementary CSS URL"),
-    "#default_value" => theme_get_setting("ucsc_css_url"),
+    "#default_value" => theme_get_setting("ucscv3_css_url"),
   );
 
   ################################################################################

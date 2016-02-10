@@ -5,7 +5,7 @@ $ucscv3_css_url = theme_get_setting("ucscv3_css_url");
 
 if ($ucscv3_css_url != "") {
   drupal_add_css(
-    $ucsc_css_url,
+    $ucscv3_css_url,
     array(
       "type" => "external",
     )
