@@ -105,7 +105,8 @@ gulp.task('build', ['clean', 'styles', 'readme'], function() {
             './*.php',
             './*.png',
             './*.info',
-            './*.md'
+            './*.md',
+            './*.ico'
         ], {
             base: "./"
         })
