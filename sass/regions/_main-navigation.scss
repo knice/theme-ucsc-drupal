@@ -26,8 +26,24 @@
   list-style-image: none;
   border: 1px solid #e7e7e6;
   border-width: 1px 0;
+
+  &:first-child {
+    border-top-left-radius: $border-radius-base;
+    border-bottom-left-radius: $border-radius-base;
+  }
+
+  &:last-child {
+    border-top-right-radius: $border-radius-base;
+    border-bottom-right-radius: $border-radius-base;
+  }
+
+  & ul li {
+    border-radius: 0;
+  }
+
   @include media($tablet) {
-    border-left: none;
+    border: 0;
+    border: 0px solid #e7e7e6;
     border-right: 1px solid #e7e7e6;
     display: table-cell;
     vertical-align: middle;
@@ -47,7 +63,7 @@
 .main_nav li a {
   display: block;
   background-color: $sand-light;
-  color:$ucsc-gold;
+  color: $ucsc-gold;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
