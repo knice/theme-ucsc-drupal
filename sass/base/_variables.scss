@@ -1,9 +1,6 @@
 /*
 *  Colors
-*  
 */
-
-// 2010 template defaults
 $sand: #F2F0E4;
 $sand-light: lighten($sand, 8%);
 $sand-med: darken($sand, 2%);
@@ -57,9 +54,7 @@ $messages-error-border: #DB6B6C;
 
 /*
 *  Typography
-*  
 */
-
 $font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
 $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace !default;
@@ -91,9 +86,7 @@ $border-radius-base: 5px;
 
 /*
 *  Layout
-*  
 */
-
 $visual-grid: true;
 $visual-grid-color: #336699;
 $visual-grid-opacity: 1.0;
