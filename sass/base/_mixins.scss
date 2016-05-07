@@ -10,3 +10,8 @@
   font-size: #{$size}px; // Fallback in px
   font-size: calculateRem($size);
 }
+
+@function em($size) {
+  $emSize: $size / 16;
+  @return #{$emSize}em;
+}
