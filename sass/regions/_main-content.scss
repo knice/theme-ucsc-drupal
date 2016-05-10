@@ -10,12 +10,14 @@
   .content img {
     max-width: 100%;
 
+    &.left,
     &.alignleft {
       display: block;
       float: left;
       margin: 0 1.25em 1.25em 0;
     }
 
+    &.right,
     &.alignright {
       display: block;
       float: right;
