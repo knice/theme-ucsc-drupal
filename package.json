@@ -1,6 +1,6 @@
 {
   "name": "ucsc-drupal",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "description": "Responsive reboot of the 2012 UCSC Drupal theme.",
   "repository": "https://github.com/knice/ucsc-drupal/",
   "main": "app.js",
