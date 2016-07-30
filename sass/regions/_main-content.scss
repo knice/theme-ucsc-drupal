@@ -11,6 +11,7 @@
     max-width: 100%;
     margin: .20em;
 
+    &[align="left"],
     &.left,
     &.alignleft {
       display: block;
@@ -18,20 +19,19 @@
       margin: 0 1.25em 1.25em 0;
     }
 
+    &[align="right"],
     &.right,
     &.alignright {
       display: block;
       float: right;
       margin: 0 1.25em 0 1.25em;
     }
-
-
   }
 
   .left_content .block .content,
   .below_content .block .content {
-    min-height:10px;
-    }
+    min-height: 10px;
+  }
 
   .below_content p {
     background-color: $sand-dark;
