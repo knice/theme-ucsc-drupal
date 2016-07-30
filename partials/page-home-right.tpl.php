@@ -23,6 +23,9 @@
 		<?php endif; ?>
 	</div>
 
-	<div class="grid_3" class="right_content">
-		<?php print render($page["sidebar_first"]); ?>
-	</div>
+	<?php if ($page["sidebar_first"] || $page["sidebar_second"]): ?>
+		<div class="grid_3" class="right_content">
+			<?php print render($page["sidebar_first"]); ?>
+			<?php print render($page["sidebar_second"]); ?>
+		</div>
+	<?php endif; ?>

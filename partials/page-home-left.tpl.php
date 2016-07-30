@@ -28,8 +28,9 @@
 		<?php endif; ?>
 	</div>
 
-	<?php if ($page["sidebar_first"]) { ?>
+	<?php if ($page["sidebar_first"] || $page["sidebar_second"]): ?>
 	<div class="grid_3 pull_9 left_content alpha">
 		<?php print render($page["sidebar_first"]); ?>
+		<?php print render($page["sidebar_second"]); ?>
 	</div>
-	<?php } ?>
+	<?php endif; ?>
