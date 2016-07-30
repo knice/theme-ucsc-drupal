@@ -12,12 +12,21 @@
     padding: 1em;
   }
 
-  .above_content {
-    border-radius: $border-radius-base;
-    padding: 0;
+  .above_content,
+  .below_content {
     background-color: $sand-light;
-    color: $gray-dark;
     border-bottom: 1px solid $sand-light;
+    border-radius: $border-radius-base;
+    margin: 1em 0;
+    padding: 1.5em 2em 1em;
+
+    :first-child {
+      margin-top: 0;
+    }
+  }
+
+  .above_content {
+    color: $gray-dark;
   }
 
   .above_content .block .content {
@@ -25,9 +34,7 @@
   }
 
   .below_content {
-    padding:10px;
     color: $gray-med;
-    border-bottom:1px solid $sand-light;
   }
 
   .footer {
