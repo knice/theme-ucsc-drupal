@@ -8,7 +8,7 @@
 	<?php endif; ?>
 
 
-	<?php if ($page["sidebar_first"]) { ?>
+	<?php if ($page["sidebar_first"] || $page["sidebar_second"]) { ?>
 		<div class="row">
 		 <div class="grid_9 push_3">
 	<?php } else { ?>
@@ -18,11 +18,10 @@
 	<h1 class="page_title"><?php print $title; ?></h1>
 
 	<?php if($page["above_content"]): ?>
-	  <div class="above_content" class="grid_12">
+	  <div class="above_content">
 	    <?php print render($page["above_content"]); ?>
 	  </div>
 	<?php endif; ?>
-
 
 	<div class="content" id="main-content">
 		<?php if ($show_messages && $messages): print render($messages); endif; ?>
@@ -32,17 +31,17 @@
 		<?php print render($page["content"]); ?>
 	</div>
 
-
 	<?php if($page["below_content"]): ?>
-	    <div class="below_content">
-	        <?php print render($page["below_content"]); ?>
-	    </div>
+    <div class="below_content">
+        <?php print render($page["below_content"]); ?>
+    </div>
 	<?php endif; ?>
 
-	<?php if ($page["sidebar_first"]) { ?>
+	<?php if ($page["sidebar_first"] || $page["sidebar_second"]) { ?>
 	</div>
 		<div class="grid_3 pull_9 left_content alpha">
 			<?php print render($page["sidebar_first"]); ?>
+			<?php print render($page["sidebar_second"]); ?>
 		</div>
 	</div>
 	<?php } ?>
