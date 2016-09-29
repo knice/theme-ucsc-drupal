@@ -29,6 +29,19 @@
     color: $gray-dark;
   }
 
+  .below_content .block {
+    margin-bottom: 1em;
+    padding: .5em 0;
+    border-top: 1px solid $sand-dark;
+
+    &:first-child {
+      border: none;
+      padding-top: 0;
+    }
+  }
+
+
+
   .above_content .block .content {
     overflow:hidden;
   }
